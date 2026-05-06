@@ -3,9 +3,8 @@ import AcidBase from "./components/AcidBase";
 import Molarity from "./components/Molarity";
 import StockDilution from "./components/StockDilution";
 import BottomNav from "./components/BottomNav";
-import "./style.css";
 
-export default function App() {
+function App() {
   const [page, setPage] = useState("acid");
 
   return (
@@ -13,8 +12,9 @@ export default function App() {
       {page === "acid" && <AcidBase />}
       {page === "molarity" && <Molarity />}
       {page === "stock" && <StockDilution />}
-
       <BottomNav setPage={setPage} />
     </>
   );
 }
+
+export default App;
