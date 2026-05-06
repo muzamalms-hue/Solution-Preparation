@@ -1,34 +1,49 @@
-import { useState } from "react";
-
-export default function BottomNav({ setPage }) {
-  const [active, setActive] = useState("acid");
-
-  const handleClick = (page) => {
-    setActive(page);
-    setPage(page);
-  };
-
+export default function BottomNav({
+  page,
+  setPage,
+}) {
   return (
     <div className="bottom-nav">
+      {/* ACID */}
       <button
-        className={active === "acid" ? "active" : ""}
-        onClick={() => handleClick("acid")}
+        className={
+          page === "acid"
+            ? "nav-btn active"
+            : "nav-btn"
+        }
+        onClick={() =>
+          setPage("acid")
+        }
       >
         Acid & Base
       </button>
 
+      {/* MOLARITY */}
       <button
-        className={active === "molarity" ? "active" : ""}
-        onClick={() => handleClick("molarity")}
+        className={
+          page === "molarity"
+            ? "nav-btn active"
+            : "nav-btn"
+        }
+        onClick={() =>
+          setPage("molarity")
+        }
       >
         Molarity
       </button>
 
+      {/* STOCK */}
       <button
-        className={active === "stock" ? "active" : ""}
-        onClick={() => handleClick("stock")}
+        className={
+          page === "stock"
+            ? "nav-btn active"
+            : "nav-btn"
+        }
+        onClick={() =>
+          setPage("stock")
+        }
       >
-        Stock
+        Stock Dilution
       </button>
     </div>
   );
