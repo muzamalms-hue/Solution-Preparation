@@ -1,36 +1,216 @@
 import { useState } from "react";
 
 export default function Molarity() {
+  // INPUTS
   const [fw, setFw] = useState("");
-  const [volume, setVolume] = useState("");
-  const [conc, setConc] = useState("");
-  const [result, setResult] = useState(null);
+  const [volume, setVolume] =
+    useState("");
 
+  const [volumeUnit, setVolumeUnit] =
+    useState("L");
+
+  const [conc, setConc] = useState("");
+
+  const [concUnit, setConcUnit] =
+    useState("M");
+
+  // RESULT
+  const [result, setResult] =
+    useState("");
+
+  // CALCULATE
   const handleCalculate = () => {
     if (!fw || !volume || !conc) {
       alert("Fill all fields");
       return;
     }
 
-    const f = parseFloat(fw);
-    const v = parseFloat(volume);
-    const c = parseFloat(conc);
+    let finalVolume =
+      parseFloat(volume);
 
-    const grams = f * c * v;
-    setResult(grams.toFixed(2));
+    // VOLUME CONVERSION
+    if (volumeUnit === "mL") {
+      finalVolume =
+        finalVolume / 1000;
+    }
+
+    if (volumeUnit === "uL") {
+      finalVolume =
+        finalVolume / 1000000;
+    }
+
+    // CONCENTRATION CONVERSION
+    let finalConc =
+      parseFloat(conc);
+
+    if (concUnit === "mM") {
+      finalConc =
+        finalConc / 1000;
+    }
+
+    if (concUnit === "uM") {
+      finalConc =
+        finalConc / 1000000;
+    }
+
+    if (concUnit === "nM") {
+      finalConc =
+        finalConc / 1000000000;
+    }
+
+    if (concUnit === "pM") {
+      finalConc =
+        finalConc /
+        1000000000000;
+    }
+
+    if (concUnit === "fM") {
+      finalConc =
+        finalConc /
+        1000000000000000;
+    }
+
+    // FORMULA
+    const grams =
+      parseFloat(fw) *
+      finalConc *
+      finalVolume;
+
+    setResult(
+      grams.toFixed(6) + " g"
+    );
   };
 
   return (
     <div className="container">
-      <h2>General Molarity</h2>
+      {/* TITLE */}
+      <h2 className="title">
+        General Molarity
+      </h2>
 
-      <input placeholder="Formula Weight" onChange={(e) => setFw(e.target.value)} />
-      <input placeholder="Volume (L)" onChange={(e) => setVolume(e.target.value)} />
-      <input placeholder="Concentration (M)" onChange={(e) => setConc(e.target.value)} />
+      {/* FORMULA WEIGHT */}
+      <div className="row">
+        <label>
+          Formula Weight
+        </label>
 
-      <button onClick={handleCalculate}>Calculate</button>
+        <input
+          type="number"
+          placeholder="0"
+          value={fw}
+          onChange={(e) =>
+            setFw(e.target.value)
+          }
+        />
 
-      {result && <div className="result">Required: {result} g</div>}
+        <span>g/mol</span>
+      </div>
+
+      {/* FINAL VOLUME */}
+      <div className="row">
+        <label>
+          Desired Final Volume
+        </label>
+
+        <input
+          type="number"
+          placeholder="0"
+          value={volume}
+          onChange={(e) =>
+            setVolume(
+              e.target.value
+            )
+          }
+        />
+
+        <select
+          className="unit"
+          value={volumeUnit}
+          onChange={(e) =>
+            setVolumeUnit(
+              e.target.value
+            )
+          }
+        >
+          <option value="L">
+            L
+          </option>
+
+          <option value="mL">
+            mL
+          </option>
+
+          <option value="uL">
+            uL
+          </option>
+        </select>
+      </div>
+
+      {/* CONCENTRATION */}
+      <div className="row">
+        <label>
+          Desired Concentration
+        </label>
+
+        <input
+          type="number"
+          placeholder="0"
+          value={conc}
+          onChange={(e) =>
+            setConc(e.target.value)
+          }
+        />
+
+        <select
+          className="unit"
+          value={concUnit}
+          onChange={(e) =>
+            setConcUnit(
+              e.target.value
+            )
+          }
+        >
+          <option value="M">
+            M
+          </option>
+
+          <option value="mM">
+            mM
+          </option>
+
+          <option value="uM">
+            uM
+          </option>
+
+          <option value="nM">
+            nM
+          </option>
+
+          <option value="pM">
+            pM
+          </option>
+
+          <option value="fM">
+            fM
+          </option>
+        </select>
+      </div>
+
+      {/* BUTTON */}
+      <button
+        onClick={handleCalculate}
+      >
+        Calculate
+      </button>
+
+      {/* RESULT */}
+      {result && (
+        <div className="result">
+          Required Amount:
+          <br />
+          {result}
+        </div>
+      )}
     </div>
   );
 }
