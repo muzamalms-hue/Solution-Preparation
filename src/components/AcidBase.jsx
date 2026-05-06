@@ -3,114 +3,127 @@ import chemicals from "../data/chemicals";
 
 export default function AcidBase() {
   const [search, setSearch] = useState("");
-  const [density, setDensity] = useState("");
-  const [fw, setFw] = useState("");
-  const [percent, setPercent] = useState("");
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [selected, setSelected] = useState(null);
+
+  const [weightPercent, setWeightPercent] = useState("");
   const [volume, setVolume] = useState("");
   const [conc, setConc] = useState("");
   const [unit, setUnit] = useState("M");
-  const [result, setResult] = useState("");
 
-  const filtered = chemicals.filter(c =>
+  const filtered = chemicals.filter((c) =>
     c.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  const selectChem = (name) => {
-    const chem = chemicals.find(c => c.name === name);
-    setSearch(name);
-    setDensity(chem.density);
-    setFw(chem.fw);
-    setPercent(chem.percent);
+  const selectChemical = (chem) => {
+    setSelected(chem);
+    setShowDropdown(false);
+    setSearch("");
   };
 
   const calculate = () => {
-    const d = parseFloat(density);
-    const f = parseFloat(fw);
-    const p = parseFloat(percent);
-    const v = parseFloat(volume);
-    let c = parseFloat(conc);
-
-    if (!d || !f || !p || !v || !c) {
-      setResult("Fill all fields");
+    if (!selected || !weightPercent || !volume || !conc) {
+      alert("Fill all fields");
       return;
     }
 
-    let molarity = (d * p * 10) / f;
+    let normalityFactor = selected.nFactor || 1;
 
-    if (unit === "N") {
-      // simple assumption
-      c = c;
-    }
+    let finalConc =
+      unit === "N" ? conc / normalityFactor : conc;
 
-    const reqVol = (c * v) / molarity;
+    let result =
+      (finalConc * selected.mw * volume) /
+      (weightPercent * selected.density * 10);
 
-    setResult(`Use ${reqVol.toFixed(2)} mL stock solution`);
+    alert("Required Volume: " + result.toFixed(2) + " mL");
   };
 
   return (
     <div className="container">
+      <h2>Acid & Base Molarity</h2>
 
-      <h2 className="title">Acid & Base Molarity</h2>
-
-      {/* SEARCH */}
-      <input
-        type="text"
-        placeholder="Select acid or base"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-
+      {/* DROPDOWN */}
       <div className="dropdown">
-        {filtered.map((c, i) => (
-          <div key={i} onClick={() => selectChem(c.name)}>
-            {c.name}
-          </div>
-        ))}
-      </div>
-
-      {/* ROWS */}
-
-      <div className="row">
-        <label>Density:</label>
-        <input value={density} onChange={e => setDensity(e.target.value)} />
-        <span>g/mL</span>
-      </div>
-
-      <div className="row">
-        <label>Formula weight:</label>
-        <input value={fw} onChange={e => setFw(e.target.value)} />
-        <span>g/mol</span>
-      </div>
-
-      <div className="row">
-        <label>Weight percentage:</label>
-        <input value={percent} onChange={e => setPercent(e.target.value)} />
-        <span>% w/w</span>
-      </div>
-
-      <div className="row">
-        <label>Desired final volume:</label>
-        <input value={volume} onChange={e => setVolume(e.target.value)} />
-        <span>mL</span>
-      </div>
-
-      <div className="row">
-        <label>Desired concentration:</label>
-        <input value={conc} onChange={e => setConc(e.target.value)} />
-
-        <select
-          className="unit"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
+        <div
+          className="dropdown-header"
+          onClick={() => setShowDropdown(!showDropdown)}
         >
-          <option value="M">Molar</option>
-          <option value="N">Normal</option>
-        </select>
+          {selected ? selected.name : "Select acid or base"}
+        </div>
+
+        {showDropdown && (
+          <div className="dropdown-box">
+            <input
+              placeholder="Search..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+
+            {filtered.map((chem, i) => (
+              <div
+                key={i}
+                onClick={() => selectChemical(chem)}
+              >
+                {chem.name}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
-      <button onClick={calculate}>Calculate</button>
+      {/* FIELDS */}
+      {selected && (
+        <>
+          <div className="row">
+            <label>Density:</label>
+            <input value={selected.density} readOnly />
+            <span>g/mL</span>
+          </div>
 
-      {result && <p className="result">{result}</p>}
+          <div className="row">
+            <label>Formula weight:</label>
+            <input value={selected.mw} readOnly />
+            <span>g/mol</span>
+          </div>
+
+          <div className="row">
+            <label>Weight %:</label>
+            <input
+              value={weightPercent}
+              onChange={(e) => setWeightPercent(e.target.value)}
+            />
+            <span>% w/w</span>
+          </div>
+
+          <div className="row">
+            <label>Final volume:</label>
+            <input
+              value={volume}
+              onChange={(e) => setVolume(e.target.value)}
+            />
+            <span>mL</span>
+          </div>
+
+          <div className="row">
+            <label>Concentration:</label>
+            <input
+              value={conc}
+              onChange={(e) => setConc(e.target.value)}
+            />
+
+            <select
+              value={unit}
+              onChange={(e) => setUnit(e.target.value)}
+            >
+              <option value="M">Molar (M)</option>
+              <option value="N">Normal (N)</option>
+            </select>
+          </div>
+
+          <button onClick={calculate}>Calculate</button>
+        </>
+      )}
     </div>
   );
 }
