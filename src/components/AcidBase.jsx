@@ -4,20 +4,28 @@ import chemicals from "../data/chemicals";
 export default function AcidBase() {
   const [search, setSearch] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
+
   const [selected, setSelected] = useState(null);
 
-  // AUTO FILLED VALUES
+  // AUTO FILLED
   const [density, setDensity] = useState("");
   const [mw, setMw] = useState("");
-  const [weightPercent, setWeightPercent] = useState("");
+  const [weightPercent, setWeightPercent] =
+    useState("");
 
   // USER INPUTS
   const [volume, setVolume] = useState("");
   const [conc, setConc] = useState("");
   const [unit, setUnit] = useState("M");
 
+  // RESULT
+  const [result, setResult] = useState("");
+
+  // FILTER
   const filtered = chemicals.filter((c) =>
-    c.name.toLowerCase().includes(search.toLowerCase())
+    c.name
+      .toLowerCase()
+      .includes(search.toLowerCase())
   );
 
   // SELECT CHEMICAL
@@ -27,13 +35,15 @@ export default function AcidBase() {
     // AUTO FILL
     setDensity(chem.density);
     setMw(chem.mw);
-    setWeightPercent(chem.weight);
+
+    // IMPORTANT FIX
+    setWeightPercent(chem.percentage);
 
     setShowDropdown(false);
     setSearch("");
   };
 
-  // CALCULATION
+  // CALCULATE
   const calculate = () => {
     if (
       !selected ||
@@ -47,14 +57,16 @@ export default function AcidBase() {
       return;
     }
 
-    let normalityFactor = selected.nFactor || 1;
+    // NORMALITY
+    let factor = selected.nFactor || 1;
 
     let finalConc =
       unit === "N"
-        ? parseFloat(conc) / normalityFactor
+        ? parseFloat(conc) / factor
         : parseFloat(conc);
 
-    let result =
+    // FORMULA
+    let requiredVolume =
       (finalConc *
         parseFloat(mw) *
         parseFloat(volume)) /
@@ -62,18 +74,19 @@ export default function AcidBase() {
         parseFloat(density) *
         10);
 
-    alert(
-      "Required Volume: " +
-        result.toFixed(2) +
-        " mL"
+    setResult(
+      requiredVolume.toFixed(2) + " mL"
     );
   };
 
   return (
     <div className="container">
-      <h2 className="title">Acid & Base Molarity</h2>
+      {/* TITLE */}
+      <h2 className="title">
+        Acid & Base Molarity
+      </h2>
 
-      {/* SELECT BOX */}
+      {/* DROPDOWN */}
       <div className="dropdown">
         <div
           className="dropdown-header"
@@ -83,7 +96,8 @@ export default function AcidBase() {
         >
           {selected
             ? selected.name
-            : "Select acid or base"}
+            : "Select acid or base"}{" "}
+          ▼
         </div>
 
         {showDropdown && (
@@ -91,6 +105,7 @@ export default function AcidBase() {
             {/* SEARCH */}
             <input
               className="search-input"
+              type="text"
               placeholder="Search acid or base..."
               value={search}
               onChange={(e) =>
@@ -114,18 +129,17 @@ export default function AcidBase() {
         )}
       </div>
 
-      {/* FIELDS */}
+      {/* SHOW FORM */}
       {selected && (
         <>
           {/* DENSITY */}
           <div className="row">
-            <label>Density:</label>
+            <label>Density</label>
 
             <input
+              type="text"
               value={density}
-              onChange={(e) =>
-                setDensity(e.target.value)
-              }
+              readOnly
             />
 
             <span>g/mL</span>
@@ -133,13 +147,14 @@ export default function AcidBase() {
 
           {/* MW */}
           <div className="row">
-            <label>Formula weight:</label>
+            <label>
+              Formula Weight
+            </label>
 
             <input
+              type="text"
               value={mw}
-              onChange={(e) =>
-                setMw(e.target.value)
-              }
+              readOnly
             />
 
             <span>g/mol</span>
@@ -147,25 +162,26 @@ export default function AcidBase() {
 
           {/* WEIGHT */}
           <div className="row">
-            <label>Weight %:</label>
+            <label>Weight %</label>
 
             <input
+              type="text"
               value={weightPercent}
-              onChange={(e) =>
-                setWeightPercent(
-                  e.target.value
-                )
-              }
+              readOnly
             />
 
-            <span>% w/w</span>
+            <span>%</span>
           </div>
 
           {/* VOLUME */}
           <div className="row">
-            <label>Final volume:</label>
+            <label>
+              Desired Final Volume
+            </label>
 
             <input
+              type="number"
+              placeholder="0"
               value={volume}
               onChange={(e) =>
                 setVolume(e.target.value)
@@ -177,9 +193,13 @@ export default function AcidBase() {
 
           {/* CONCENTRATION */}
           <div className="row">
-            <label>Concentration:</label>
+            <label>
+              Desired Concentration
+            </label>
 
             <input
+              type="number"
+              placeholder="0"
               value={conc}
               onChange={(e) =>
                 setConc(e.target.value)
@@ -207,8 +227,17 @@ export default function AcidBase() {
           <button onClick={calculate}>
             Calculate
           </button>
+
+          {/* RESULT */}
+          {result && (
+            <div className="result">
+              Required Volume:
+              <br />
+              {result}
+            </div>
+          )}
         </>
       )}
     </div>
   );
-                           }
+            }
