@@ -1,5 +1,5 @@
 import { useState } from "react";
-import volumetric from "../data/volumetric";
+import volumetric from "../data/Volumetric";
 
 export default function VolumetricSolution() {
   const [search, setSearch] =
