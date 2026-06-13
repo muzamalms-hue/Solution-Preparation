@@ -2,20 +2,37 @@ import { useState } from "react";
 import volumetric from "../data/Volumetric";
 
 export default function VolumetricSolution() {
-  const [search, setSearch] =
-    useState("");
+  const [search, setSearch] = useState("");
+  const [selected, setSelected] = useState(null);
 
-  const [selected, setSelected] =
-    useState(null);
+  const filtered = volumetric.filter((item) =>
+    item.name.toLowerCase().includes(search.toLowerCase())
+  );
 
-  const filtered =
-    volumetric.filter((item) =>
-      item.name
-        .toLowerCase()
-        .includes(
-          search.toLowerCase()
-        )
+  if (selected) {
+    return (
+      <div className="container">
+        <button
+          onClick={() => setSelected(null)}
+          className="back-btn"
+        >
+          ← Back
+        </button>
+
+        <h2 className="title">
+          {selected.name}
+        </h2>
+
+        <div className="result-card">
+          <h3>Preparation</h3>
+
+          <p>
+            {selected.preparation}
+          </p>
+        </div>
+      </div>
     );
+  }
 
   return (
     <div className="container">
@@ -25,39 +42,29 @@ export default function VolumetricSolution() {
 
       <input
         className="search-input"
-        placeholder="Search..."
+        type="text"
+        placeholder="Search Solution..."
         value={search}
         onChange={(e) =>
           setSearch(e.target.value)
         }
       />
 
-      <div className="dropdown">
-        {filtered.map((item, i) => (
-          <div
-            key={i}
-            onClick={() =>
-              setSelected(item)
-            }
-          >
-            {item.name}
-          </div>
-        ))}
+      <div className="solution-list">
+        {filtered
+          .slice(0, 5)
+          .map((item, index) => (
+            <div
+              key={index}
+              className="solution-item"
+              onClick={() =>
+                setSelected(item)
+              }
+            >
+              {item.name}
+            </div>
+          ))}
       </div>
-
-      {selected && (
-        <div className="result">
-          <h3>
-            {selected.name}
-          </h3>
-
-          <p>
-            {
-              selected.preparation
-            }
-          </p>
-        </div>
-      )}
     </div>
   );
 }
