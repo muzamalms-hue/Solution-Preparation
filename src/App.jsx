@@ -3,6 +3,7 @@ import { useState } from "react";
 import AcidBase from "./components/AcidBase";
 import Molarity from "./components/Molarity";
 import StockDilution from "./components/StockDilution";
+import Solutions from "./components/Solutions";
 
 import BottomNav from "./components/BottomNav";
 
@@ -26,6 +27,11 @@ function App() {
       {/* STOCK */}
       {page === "stock" && (
         <StockDilution />
+      )}
+
+      {/* SOLUTIONS */}
+      {page === "solutions" && (
+        <Solutions />
       )}
 
       {/* BOTTOM NAV */}
