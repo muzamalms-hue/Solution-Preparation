@@ -11,7 +11,8 @@ export default [
 
   standardization:
     "Accurately transfer 10 mL of the 2 N acetic acid solution to a beaker. Add 50 mL of carbon dioxide-free water. Titrate potentiometrically with 1 N sodium hydroxide VS."
-},
+  },
+  
   {
   name: "0.2 N Alcoholic Potassium Hydroxide VS",
   strength: "0.2 N",
@@ -24,7 +25,8 @@ export default [
 
   standardization:
     "Accurately measure 10 mL of 0.5 N hydrochloric acid VS. Dilute with 50 mL of water, add 2 drops of phenolphthalein TS, and titrate with the alcoholic potassium hydroxide solution until a permanent pale pink color is produced."
-},
+  },
+  
   {
   name: "0.1 N Ammonium Thiocyanate VS",
   strength: "0.1 N",
@@ -37,7 +39,8 @@ export default [
 
   standardization:
     "Accurately measure about 30 mL of 0.1 N silver nitrate VS into a glass-stoppered flask. Dilute with 50 mL of water, then add 2 mL of nitric acid and 2 mL of ferric ammonium sulfate TS, and titrate with the ammonium thiocyanate solution to the first appearance of a red-brown color. If desirable, 0.1 N ammonium thiocyanate may be replaced by 0.1 N potassium thiocyanate where the former is directed in various tests and assays. Standardization with potentiometric endpoint: Accurately measure about 10 mL of 0.1 N silver nitrate VS into a glass-stoppered flask. Dilute with 50 mL of water, add 2 mL of nitric acid, and titrate potentiometrically with the ammonium thiocyanate solution using a silver indicating electrode and an appropriate reference electrode or a combined silver electrode. If desirable, 0.1 N ammonium thiocyanate may be replaced by 0.1 N potassium thiocyanate where the former is directed in various tests and assays."
-},
+  },
+  
   {
   name: "0.05 M Barium Perchlorate VS",
   strength: "0.05 M",
@@ -50,7 +53,8 @@ export default [
 
   standardization:
     "0.1 N sulfuric acid: Transfer 10 mL of 1 N sulfuric acid VS to a 100 mL volumetric flask and dilute to volume with water. To 5.0 mL of 0.1 N sulfuric acid add 5 mL of water, 50 mL of Buffer solution pH 3.7, and 0.5 mL of sodium alizarinsulfonate TS. Titrate with the Barium perchlorate solution until an orange-red color appears. Standardize immediately before use. Standardization with potentiometric endpoint: Ammonia buffer solution pH 10: Transfer 54 g of ammonium chloride to a 1000 mL volumetric flask containing about 200 mL of water, swirl until dissolved. Add 350 mL of 25% ammonia water. Dilute to volume with water. To 50 mL of water, add 10.0 mL of 0.05 M barium perchlorate solution, 5 mL of Ammonia buffer solution pH 10 and 1 mL of Copper–EDTA complex solution. Titrate potentiometrically with 0.05 M edetate disodium VS using a copper ion-selective electrode. Standardize immediately before use."
-},
+  },
+  
   {
   name: "0.004 M Benzethonium Chloride",
   strength: "0.004 M",
@@ -76,7 +80,7 @@ standardization:
 
   standardization:
     "Standardization with visual endpoint: Accurately measure 25 mL of the prepared bismuth nitrate solution, add 50 mL of water and 1 drop of xylenol orange TS, and titrate the solution with 0.01 M edetate disodium VS until the red color changes to yellow. Standardization with potentiometric endpoint: Acetate buffer, pH 4.7: Transfer 116 g of ammonium acetate to a 1000-mL volumetric flask containing about 200 mL of water, and swirl until dissolved. Add 86 mL of glacial acetic acid and dilute with water to volume. Accurately measure 25 mL of the bismuth nitrate solution into a titration vessel, add 5 mL of Acetate buffer, pH 4.7 and 5 mL of 0.01 M edetate disodium VS. After a reaction time of 1 min, titrate potentiometrically with 0.1 N cupric nitrate VS using a copper ion-selective electrode."
-},
+  },
   {
   name: "0.1 N Bromine VS",
   strength: "0.1 N",
@@ -89,6 +93,5 @@ standardization:
 
   standardization:
     "Standardization with visual endpoint: Accurately measure about 25 mL of the solution into a 500-mL iodine flask, and dilute with 120 mL of water. Add 5 mL of hydrochloric acid, insert the stopper in the flask, and shake it gently. Then add 5 mL of potassium iodide TS, again insert the stopper, shake the mixture, allow it to stand for 5 min, and titrate the liberated iodine with 0.1 N sodium thiosulfate VS, adding 3 mL of starch TS as the endpoint is approached. Standardization with potentiometric endpoint: Accurately measure 10 mL of the solution into a 500-mL iodine flask, and dilute with 120 mL of water. Add 2 mL of hydrochloric acid, insert the stopper in the flask, and shake it gently. Then add 2 mL of potassium iodide TS, again insert the stopper, shake the mixture, allow it to stand for 5 min, and titrate the liberated iodine potentiometrically with 0.1 N sodium thiosulfate VS using a combined platinum electrode."
-}
-  
+  }
   ]
