@@ -1,6 +1,5 @@
 export default [
   {
-    {
   name: "2 N Acetic Acid VS",
   strength: "2 N",
 
