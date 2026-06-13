@@ -73,5 +73,105 @@ export default [
 
   formulaPotentiometricEndpoint:
     "M = (mL edetate solution × N edetate solution) / mL barium perchlorate"
-  }
+  },
+
+  {
+  name: "0.004 M Benzethonium Chloride VS",
+  strength: "0.004 M",
+
+  preparation:
+    "Dissolve 1.792 g of benzethonium chloride, previously dried at 100°–105° to constant weight, in water to make 1000 mL.",
+
+  formula:
+    "M = (mL NaB(C6H5)4 × M NaB(C6H5)4) / mL benzethonium chloride",
+
+  standardization:
+    "Visual endpoint: Dissolve 0.350 g of the dried benzethonium chloride in 30 mL of glacial acetic acid and add 6 mL of mercuric acetate TS. Titrate with 0.1 N perchloric acid in glacial acetic acid using crystal violet TS. Potentiometric endpoint: Accurately measure 2.0 mL of standardized 0.02 M sodium tetraphenylboron VS, add 50 mL water and 1 mL of 1 N sodium hydroxide VS, then titrate with the benzethonium chloride solution."
+},
+
+{
+  name: "0.01 M Bismuth Nitrate VS",
+  strength: "0.01 M",
+
+  preparation:
+    "Dissolve 4.86 g of bismuth nitrate pentahydrate in 60 mL of diluted nitric acid, and add 0.01 N nitric acid to make 1000 mL.",
+
+  formula:
+    "M = (mL EDTA × M EDTA) / mL bismuth nitrate",
+
+  standardization:
+    "Visual endpoint: Measure 25 mL solution, add 50 mL water and xylenol orange TS, titrate with 0.01 M edetate disodium VS until red changes to yellow. Potentiometric endpoint: Use acetate buffer pH 4.7 and titrate with 0.1 N cupric nitrate VS using copper ion-selective electrode."
+},
+
+{
+  name: "0.1 N Bromine VS",
+  strength: "0.1 N",
+
+  preparation:
+    "Dissolve 3 g of potassium bromate and 15 g of potassium bromide in water to make 1000 mL. Preserve in dark amber-colored, glass-stoppered bottles.",
+
+  formula:
+    "N = (mL Na2S2O3 × N Na2S2O3) / mL Br2 solution",
+
+  standardization:
+    "Liberate iodine with hydrochloric acid and potassium iodide TS and titrate with 0.1 N sodium thiosulfate VS using starch TS. Potentiometric standardization may be performed using a combined platinum electrode."
+},
+
+{
+  name: "0.05 N Ceric Ammonium Nitrate VS",
+  strength: "0.05 N",
+
+  preparation:
+    "Dissolve 2.75 g of ceric ammonium nitrate in 1 N nitric acid to obtain 100 mL of solution, and filter.",
+
+  formula:
+    "N = (mL Fe(NH4)2(SO4)2 × N Fe(NH4)2(SO4)2) / (mL Ce(NO3)4·2NH4NO3)",
+
+  standardization:
+    "Titrate freshly standardized 0.1 N ferrous ammonium sulfate VS with ceric ammonium nitrate solution using either nitrophenanthroline TS visual endpoint or potentiometric endpoint."
+},
+
+{
+  name: "0.1 N Ceric Ammonium Sulfate VS",
+  strength: "0.1 N",
+
+  preparation:
+    "Transfer 65 g of ceric ammonium sulfate to a 1000-mL volumetric flask containing a mixture of 30 mL of sulfuric acid and 500 mL of water. Swirl until dissolved. Cool and dilute with water to volume.",
+
+  formula:
+    "N = (mL Na2S2O3 × N Na2S2O3) / mL Ce(NH4)4(SO4)4",
+
+  standardization:
+    "Add potassium iodide and titrate with freshly standardized 0.1 N sodium thiosulfate VS using visual or potentiometric endpoint."
+},
+
+{
+  name: "0.01 N Ceric Ammonium Sulfate VS",
+  strength: "0.01 N",
+
+  preparation:
+    "Transfer 6.5 g of ceric ammonium sulfate to a 1000-mL volumetric flask containing a mixture of 30 mL of sulfuric acid and 500 mL of water. Swirl until dissolved. Cool and dilute with water to volume.",
+
+  formula:
+    "N = (mL Na2S2O3 × N Na2S2O3) / mL Ce(NH4)4(SO4)4",
+
+  standardization:
+    "Add potassium iodide and titrate immediately with freshly standardized 0.01 M sodium thiosulfate VS using visual or potentiometric endpoint."
+},
+
+{
+  name: "0.1 N Ceric Sulfate VS",
+  strength: "0.1 N",
+
+  preparation:
+    "Use commercially available volumetric standard solution.",
+
+  formula:
+    "N = mg Na2C2O4 / (67.00 × mL Ce(SO4)2 solution)",
+
+  standardization:
+    "Accurately weigh sodium oxalate primary standard, dissolve in water, add sulfuric acid and hydrochloric acid, heat to 70°–75°, and titrate with 0.1 N ceric sulfate to a permanent slight yellow color."
+},
+
+  
   ]
