@@ -1,60 +1,61 @@
 import { useState } from "react";
-import { volumetricSolutions } from "../data/volumetric";
+import volumetric from "../data/volumetric";
 
 export default function VolumetricSolution() {
-  const [search, setSearch] = useState("");
-  const [selected, setSelected] = useState(null);
+  const [search, setSearch] =
+    useState("");
 
-  const filtered = volumetricSolutions.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const [selected, setSelected] =
+    useState(null);
+
+  const filtered =
+    volumetric.filter((item) =>
+      item.name
+        .toLowerCase()
+        .includes(
+          search.toLowerCase()
+        )
+    );
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2 style={{ color: "red", textAlign: "center" }}>
+    <div className="container">
+      <h2 className="title">
         Volumetric Solutions
       </h2>
 
       <input
-        type="text"
-        placeholder="Search Solution..."
+        className="search-input"
+        placeholder="Search..."
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        style={{
-          width: "100%",
-          padding: "12px",
-          borderRadius: "10px",
-          border: "2px solid black",
-          marginBottom: "15px"
-        }}
+        onChange={(e) =>
+          setSearch(e.target.value)
+        }
       />
 
-      {filtered.map((item, index) => (
-        <div
-          key={index}
-          onClick={() => setSelected(item)}
-          style={{
-            padding: "12px",
-            border: "1px solid #ccc",
-            marginBottom: "8px",
-            cursor: "pointer"
-          }}
-        >
-          {item.name}
-        </div>
-      ))}
+      <div className="dropdown">
+        {filtered.map((item, i) => (
+          <div
+            key={i}
+            onClick={() =>
+              setSelected(item)
+            }
+          >
+            {item.name}
+          </div>
+        ))}
+      </div>
 
       {selected && (
-        <div
-          style={{
-            marginTop: "20px",
-            padding: "15px",
-            border: "2px solid black",
-            borderRadius: "10px"
-          }}
-        >
-          <h3>{selected.name}</h3>
-          <p>{selected.preparation}</p>
+        <div className="result">
+          <h3>
+            {selected.name}
+          </h3>
+
+          <p>
+            {
+              selected.preparation
+            }
+          </p>
         </div>
       )}
     </div>
