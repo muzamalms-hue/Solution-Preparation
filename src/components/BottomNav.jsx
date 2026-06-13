@@ -45,6 +45,20 @@ export default function BottomNav({
       >
         Stock Dilution
       </button>
+
+      {/* SOLUTIONS */}
+      <button
+        className={
+          page === "solutions"
+            ? "nav-btn active"
+            : "nav-btn"
+        }
+        onClick={() =>
+          setPage("solutions")
+        }
+      >
+        Solutions
+      </button>
     </div>
   );
-      }
+}
