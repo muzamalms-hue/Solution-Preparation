@@ -1,22 +1,224 @@
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN CONTAINER */
+.container {
+  padding: 15px;
+  padding-bottom: 90px;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  color: #d60000;
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.dropdown {
+  margin-bottom: 15px;
+}
+
+/* SELECT HEADER */
+.dropdown-header {
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #000;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* DROPDOWN BOX */
+.dropdown-box {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+/* SEARCH */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* LIST */
+.dropdown-item {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background: #f4f4f4;
+}
+
+/* SCROLL */
+.dropdown-box {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+/* =========================
+   FORM ROWS
+========================= */
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  gap: 8px;
+}
+
+/* LABEL */
+.row label {
+  width: 42%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* INPUT */
+.row input {
+  width: 28%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  background: white;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* UNIT TEXT */
+.row span {
+  width: 20%;
+  font-size: 13px;
+  color: #444;
+}
+
+/* UNIT SELECT */
+.unit {
+  width: 30%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  background: white;
+  font-size: 14px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #d60000;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* BUTTON PRESS */
+button:active {
+  transform: scale(0.98);
+}
+
+/* RESULT */
+.result {
+  margin-top: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  font-size: 16px;
+}
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
 .bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #111;
-  padding: 8px;
-}
 
-.nav-row {
   display: flex;
-  gap: 8px;
-  margin-bottom: 6px;
+  justify-content: space-between;
+
+  background: #202020;
+  padding: 8px;
+
+  z-index: 1000;
 }
 
-.nav-row:last-child {
-  margin-bottom: 0;
-}
-
-.nav-btn {
+/* NAV BUTTONS */
+.bottom-nav button {
   flex: 1;
+
+  margin: 0 4px;
+
+  background: #303030;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  padding: 12px 5px;
 }
+
+/* ACTIVE / HOVER */
+.bottom-nav button:hover {
+  background: #d60000;
+}
+
+/* MOBILE FIX */
+@media (max-width: 480px) {
+  .row label {
+    width: 40%;
+    font-size: 13px;
+  }
+
+  .row input {
+    width: 30%;
+    font-size: 13px;
+  }
+
+  .row span {
+    width: 20%;
+    font-size: 12px;
+  }
+
+  .unit {
+    width: 32%;
+    font-size: 13px;
+  }
+
+  .bottom-nav button {
+    font-size: 12px;
+    padding: 10px 3px;
+  }
+    }
