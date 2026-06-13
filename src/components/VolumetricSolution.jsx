@@ -6,9 +6,12 @@ export default function VolumetricSolution() {
   const [selected, setSelected] = useState(null);
 
   const filtered = volumetric.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase())
+    item.name
+      .toLowerCase()
+      .includes(search.toLowerCase())
   );
 
+  // DETAIL PAGE
   if (selected) {
     return (
       <div className="container">
@@ -23,17 +26,38 @@ export default function VolumetricSolution() {
           {selected.name}
         </h2>
 
-        <div className="result-card">
-          <h3>Preparation</h3>
+        {selected.strength && (
+          <div className="result-card">
+            <h3>Strength</h3>
+            <p>{selected.strength}</p>
+          </div>
+        )}
 
-          <p>
-            {selected.preparation}
-          </p>
-        </div>
+        {selected.formula && (
+          <div className="result-card">
+            <h3>Formula</h3>
+            <p>{selected.formula}</p>
+          </div>
+        )}
+
+        {selected.preparation && (
+          <div className="result-card">
+            <h3>Preparation</h3>
+            <p>{selected.preparation}</p>
+          </div>
+        )}
+
+        {selected.standardization && (
+          <div className="result-card">
+            <h3>Standardization</h3>
+            <p>{selected.standardization}</p>
+          </div>
+        )}
       </div>
     );
   }
 
+  // LIST PAGE
   return (
     <div className="container">
       <h2 className="title">
