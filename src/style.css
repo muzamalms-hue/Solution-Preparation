@@ -221,4 +221,41 @@ button:active {
     font-size: 12px;
     padding: 10px 3px;
   }
+
+  .search-input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.solution-list {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.solution-item {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.solution-item:last-child {
+  border-bottom: none;
+}
+
+.result-card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.back-btn {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+}
 }
