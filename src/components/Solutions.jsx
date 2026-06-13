@@ -1,16 +1,19 @@
 import { useState } from "react";
+import VolumetricSolution from "./VolumetricSolution";
 
 export default function Solutions() {
   const [category, setCategory] =
     useState("");
+
+  if (category === "volumetric") {
+    return <VolumetricSolution />;
+  }
 
   return (
     <div className="container">
       <h2 className="title">
         Solutions
       </h2>
-
-      {/* MENU */}
 
       <button
         onClick={() =>
@@ -59,49 +62,6 @@ export default function Solutions() {
       >
         Buffer Solution
       </button>
-
-      {/* CONTENT */}
-
-      {category ===
-        "volumetric" && (
-        <div className="result">
-          Volumetric Solution List
-        </div>
-      )}
-
-      {category ===
-        "standard" && (
-        <div className="result">
-          Standard Solution List
-        </div>
-      )}
-
-      {category ===
-        "indicator" && (
-        <div className="result">
-          Indicator List
-        </div>
-      )}
-
-      {category ===
-        "reagents" && (
-        <div className="result">
-          Reagents List
-        </div>
-      )}
-
-      {category === "test" && (
-        <div className="result">
-          Test Solution List
-        </div>
-      )}
-
-      {category ===
-        "buffer" && (
-        <div className="result">
-          Buffer Solution List
-        </div>
-      )}
     </div>
   );
-          }
+}
