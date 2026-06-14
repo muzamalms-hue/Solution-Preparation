@@ -1,81 +1,26 @@
-import { useState } from "react";
+// components/BufferSolutions.jsx
+
 import bufferSolutions from "../data/buffer-solutions";
 
 export default function BufferSolutions() {
-  const [search, setSearch] = useState("");
-  const [selected, setSelected] = useState(null);
+return (
+<div className="solutions-container">
+<h2 className="page-title">Buffer Solutions</h2>
 
-  const filtered = bufferSolutions.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase())
-  );
+<div className="solutions-grid">  
+    {bufferSolutions.map((item, index) => (  
+      <div className="solution-card" key={index}>  
+        <h3 className="solution-name">{item.name}</h3>  
 
-  // DETAIL PAGE
-  if (selected) {
-    return (
-      <div className="container">
-        <button onClick={() => setSelected(null)} className="back-btn">
-          ← Back
-        </button>
+        <div className="solution-details">  
+          <p><strong>Composition:</strong> {item.composition}</p>  
+          <p><strong>pH Range:</strong> {item.phRange}</p>  
+          <p><strong>Use:</strong> {item.use}</p>  
+        </div>  
+      </div>  
+    ))}  
+  </div>  
+</div>
 
-        <h2 className="title">{selected.name}</h2>
-
-        {selected.composition && (
-          <div className="result-card">
-            <h3>Composition</h3>
-            <p>{selected.composition}</p>
-          </div>
-        )}
-
-        {selected.phRange && (
-          <div className="result-card">
-            <h3>pH Range</h3>
-            <p>{selected.phRange}</p>
-          </div>
-        )}
-
-        {selected.use && (
-          <div className="result-card">
-            <h3>Use</h3>
-            <p>{selected.use}</p>
-          </div>
-        )}
-
-        {selected.notes && (
-          <div className="result-card">
-            <h3>Notes</h3>
-            <p>{selected.notes}</p>
-          </div>
-        )}
-      </div>
-    );
-  }
-
-  // LIST PAGE
-  return (
-    <div className="container">
-      <h2 className="title">Buffer Solutions</h2>
-
-      <input
-        className="search-input"
-        type="text"
-        placeholder="Search Buffer Solution..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-
-      <div className="solution-list">
-        {filtered
-          .slice(0, search ? filtered.length : 5)
-          .map((item, index) => (
-            <div
-              key={index}
-              className="solution-item"
-              onClick={() => setSelected(item)}
-            >
-              {item.name}
-            </div>
-          ))}
-      </div>
-    </div>
-  );
+);
 }
