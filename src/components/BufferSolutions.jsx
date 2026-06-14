@@ -11,7 +11,7 @@ export default function BufferSolutions() {
       .includes(search.toLowerCase())
   );
 
-  // DETAIL VIEW
+  // DETAIL PAGE
   if (selected) {
     return (
       <div className="container">
@@ -47,11 +47,12 @@ export default function BufferSolutions() {
     );
   }
 
-  // LIST VIEW
+  // LIST PAGE
   return (
     <div className="container">
       <h2 className="title">Buffer Solutions</h2>
 
+      {/* SEARCH */}
       <input
         className="search-input"
         type="text"
@@ -60,6 +61,7 @@ export default function BufferSolutions() {
         onChange={(e) => setSearch(e.target.value)}
       />
 
+      {/* DROPDOWN */}
       {search && (
         <div className="dropdown">
           {filtered.slice(0, 5).map((item, index) => (
@@ -74,6 +76,7 @@ export default function BufferSolutions() {
         </div>
       )}
 
+      {/* GRID (default view) */}
       {!search && (
         <div className="solutions-grid">
           {bufferSolutions.slice(0, 6).map((item, index) => (
@@ -82,16 +85,22 @@ export default function BufferSolutions() {
               className="solution-card"
               onClick={() => setSelected(item)}
             >
-              <h3>{item.name || `pH ${item.ph}`}</h3>
+              <h3 className="solution-name">
+                {item.name || `pH ${item.ph}`}
+              </h3>
 
-              <p>
-                <strong>Preparation:</strong>{" "}
-                {item.preparation?.slice(0, 60) || "Click to view details"}
-              </p>
+              <div className="solution-details">
+                {item.preparation && (
+                  <p>
+                    <strong>Preparation:</strong>{" "}
+                    {item.preparation.slice(0, 80)}...
+                  </p>
+                )}
+              </div>
             </div>
           ))}
         </div>
       )}
     </div>
   );
-}
+    }
