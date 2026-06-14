@@ -1,22 +1,22 @@
 const standardSolutions = [
   {
-    "name": "Ammonium Standard Solution (100 ppm NH4)",
-    "strength": "100 ppm NH4",
-    "formula": "Ready-to-use standard",
-    "preparation": "Immediately before use, dilute to 25 mL with water R, 10 mL of a solution containing ammonium chloride R equivalent to 0.741 g NH4Cl in 1000 mL.",
-    "standardization": "Not required."
+    name: "Ammonium Standard Solution (100 ppm NH4)",
+    strength: "100 ppm NH4",
+    formula: "Ready-to-use standard",
+    preparation: "Immediately before use, dilute to 25 mL with water R, 10 mL of a solution containing ammonium chloride R equivalent to 0.741 g NH4Cl in 1000 mL.",
+    standardization: "Not required."
   },
   {
-    "name": "Ammonium Standard Solution (3 ppm NH4)",
-    "strength": "3 ppm NH4",
-    "formula": "Ready-to-use standard",
-    "preparation": "Immediately before use, dilute 100-fold with water R a solution containing ammonium chloride R equivalent to 0.889 g NH4Cl in 1000 mL.",
-    "standardization": "Not required."
+    name: "Ammonium Standard Solution (3 ppm NH4)",
+    strength: "3 ppm NH4",
+    formula: "Ready-to-use standard",
+    preparation: "Immediately before use, dilute 100-fold with water R a solution containing ammonium chloride R equivalent to 0.889 g NH4Cl in 1000 mL.",
+    standardization: "Not required."
   },
   {
-    "name": "Ammonium Standard Solution (2.5 ppm NH4)",
-    "strength": "2.5 ppm NH4",
-    "formula": "Ready-to-use standard",
+    name: "Ammonium Standard Solution (2.5 ppm NH4)",
+    strength: "2.5 ppm NH4",
+    formula: "Ready-to-use standard",
     "preparation": "Immediately before use, dilute 100-fold with water R a solution containing ammonium chloride R equivalent to 0.741 g NH4Cl in 1000 mL.",
     "standardization": "Not required."
   },
@@ -364,7 +364,7 @@ const standardSolutions = [
     "standardization": "Not required."
   },
   {
-    "name": "Zinc Standard Solution (10 ppm Zn)",
+    name": "Zinc Standard Solution (10 ppm Zn)",
     "strength": "10 ppm Zn",
     "formula": "Ready-to-use standard",
     "preparation": "Immediately before use, dilute Zinc Standard Solution (100 ppm Zn) 10-fold with water.",
