@@ -9,36 +9,27 @@ import BottomNav from "./components/BottomNav";
 
 function App() {
   // ACTIVE PAGE
-  const [page, setPage] =
-    useState("acid");
+  const [page, setPage] = useState("acid");
 
   return (
     <div className="app">
       {/* ACID & BASE */}
-      {page === "acid" && (
-        <AcidBase />
-      )}
+      {page === "acid" && <AcidBase />}
 
       {/* MOLARITY */}
-      {page === "molarity" && (
-        <Molarity />
-      )}
+      {page === "molarity" && <Molarity />}
 
       {/* STOCK */}
-      {page === "stock" && (
-        <StockDilution />
-      )}
+      {page === "stock" && <StockDilution />}
 
       {/* SOLUTIONS */}
-      {page === "solutions" && (
-        <Solutions />
-      )}
+      {page === "solutions" && <Solutions />}
+
+      {/* INDICATORS (ADDED ONLY THIS) */}
+      {page === "indicators" && <Indicators />}
 
       {/* BOTTOM NAV */}
-      <BottomNav
-        page={page}
-        setPage={setPage}
-      />
+      <BottomNav page={page} setPage={setPage} />
     </div>
   );
 }
