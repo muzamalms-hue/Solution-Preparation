@@ -17,7 +17,7 @@ export default function Solutions() {
   return (
     <div className="container">
       <h2 className="title">
-        Solutions
+        Solutions 123
       </h2>
 
       <button
