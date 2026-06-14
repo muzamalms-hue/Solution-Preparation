@@ -1,13 +1,96 @@
-import standardSolutions from "../data/standard-solutions";
+import { useState } from "react";
+import volumetric from "../data/Volumetric";
 
-export default function StandardSolutions() {
-  return (
-    <div>
-      <h1>Standard Solutions</h1>
+export default function VolumetricSolution() {
+const [search, setSearch] = useState("");
+const [selected, setSelected] = useState(null);
 
-      {standardSolutions.map((item, index) => (
-        <p key={index}>{item.name}</p>
-      ))}
-    </div>
-  );
+const filtered = volumetric.filter((item) =>
+item.name
+.toLowerCase()
+.includes(search.toLowerCase())
+);
+
+// DETAIL PAGE
+if (selected) {
+return (
+<div className="container">
+<button
+onClick={() => setSelected(null)}
+className="back-btn"
+>
+← Back
+</button>
+
+<h2 className="title">  
+      {selected.name}  
+    </h2>  
+
+    {selected.strength && (  
+      <div className="result-card">  
+        <h3>Strength</h3>  
+        <p>{selected.strength}</p>  
+      </div>  
+    )}  
+
+    {selected.formula && (  
+      <div className="result-card">  
+        <h3>Formula</h3>  
+        <p>{selected.formula}</p>  
+      </div>  
+    )}  
+
+    {selected.preparation && (  
+      <div className="result-card">  
+        <h3>Preparation</h3>  
+        <p>{selected.preparation}</p>  
+      </div>  
+    )}  
+
+    {selected.standardization && (  
+      <div className="result-card">  
+        <h3>Standardization</h3>  
+        <p>{selected.standardization}</p>  
+      </div>  
+    )}  
+  </div>  
+);
+
+}
+
+// LIST PAGE
+return (
+<div className="container">
+<h2 className="title">
+Volumetric Solutions
+</h2>
+
+<input  
+    className="search-input"  
+    type="text"  
+    placeholder="Search Solution..."  
+    value={search}  
+    onChange={(e) =>  
+      setSearch(e.target.value)  
+    }  
+  />  
+
+  <div className="solution-list">  
+    {filtered  
+      .slice(0, 5)  
+      .map((item, index) => (  
+        <div  
+          key={index}  
+          className="solution-item"  
+          onClick={() =>  
+            setSelected(item)  
+          }  
+        >  
+          {item.name}  
+        </div>  
+      ))}  
+  </div>  
+</div>
+
+);
 }
