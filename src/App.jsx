@@ -8,30 +8,42 @@ import Indicators from "./components/Indicators";
 import BottomNav from "./components/BottomNav";
 
 function App() {
-  // ACTIVE PAGE
-  const [page, setPage] = useState("acid");
+// ACTIVE PAGE
+const [page, setPage] =
+useState("acid");
 
-  return (
-    <div className="app">
-      {/* ACID & BASE */}
-      {page === "acid" && <AcidBase />}
+return (
+<div className="app">
+{/* ACID & BASE */}
+{page === "acid" && (
+<AcidBase />
+)}
 
-      {/* MOLARITY */}
-      {page === "molarity" && <Molarity />}
+{/* MOLARITY */}  
+  {page === "molarity" && (  
+    <Molarity />  
+  )}  
 
-      {/* STOCK */}
-      {page === "stock" && <StockDilution />}
+  {/* STOCK */}  
+  {page === "stock" && (  
+    <StockDilution />  
+  )}  
 
-      {/* SOLUTIONS */}
-      {page === "solutions" && <Solutions />}
+  {/* SOLUTIONS */}  
+  {page === "solutions" && (  
+    <Solutions />  
+  )}  
 
-      {/* INDICATORS (ADDED ONLY THIS) */}
-      {page === "indicators" && <Indicators />}
+  {/* BOTTOM NAV */}  
+  <BottomNav  
+    page={page}  
+    setPage={setPage}  
+  />  
+</div>
 
-      {/* BOTTOM NAV */}
-      <BottomNav page={page} setPage={setPage} />
-    </div>
-  );
+);
 }
 
 export default App;
+
+Just addition krna hai pattern change na ho
