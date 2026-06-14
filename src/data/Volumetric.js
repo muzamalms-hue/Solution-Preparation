@@ -94,5 +94,87 @@ export default [
 
   standardization:
     "Accurately measure about 25 mL of the solution into a 500-mL iodine flask, and dilute with 120 mL of water. Add 5 mL of hydrochloric acid, insert the stopper in the flask, and shake it gently. Then add 5 mL of potassium iodide TS, again insert the stopper, shake the mixture, allow it to stand for 5 min, and titrate the liberated iodine with 0.1 N sodium thiosulfate VS, adding 3 mL of starch TS as the endpoint is approached. Standardization with potentiometric endpoint: Accurately measure 10 mL of the solution into a 500-mL iodine flask, and dilute with 120 mL of water. Add 2 mL of hydrochloric acid, insert the stopper in the flask, and shake it gently. Then add 2 mL of potassium iodide TS, again insert the stopper, shake the mixture, allow it to stand for 5 min, and titrate the liberated iodine potentiometrically with 0.1 N sodium thiosulfate VS using a combined platinum electrode."
-  }
+  },
+
+  {
+  name: "0.05 N Ceric Ammonium Nitrate VS",
+  strength: "0.05 N",
+
+  formula:
+    "N = (mL Fe(NH4)2(SO4)2 × N Fe(NH4)2(SO4)2) / mL Ce(NO3)4·2NH4NO3",
+
+  preparation:
+    "Dissolve 2.75 g of ceric ammonium nitrate in 1 N nitric acid to obtain 100 mL of solution, and filter.",
+
+  standardization:
+    "Standardization with visual endpoint: Accurately measure 10 mL of freshly standardized 0.1 N ferrous ammonium sulfate VS into a flask, and dilute with water to about 100 mL. Add 1 drop of nitrophenanthroline TS, and titrate with the ceric ammonium nitrate solution to a colorless endpoint. Standardization with potentiometric endpoint: Accurately measure 10 mL of freshly standardized 0.1 N ferrous ammonium sulfate VS into a flask, and dilute with water to about 100 mL. Titrate potentiometrically with the ceric ammonium nitrate solution using a combined platinum electrode."
+},
+
+{
+  name: "0.1 N Ceric Ammonium Sulfate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mL Na2S2O3 × N Na2S2O3) / mL Ce(NH4)4(SO4)4",
+
+  preparation:
+    "Transfer 65 g of ceric ammonium sulfate to a 1000-mL volumetric flask containing a mixture of 30 mL of sulfuric acid and 500 mL of water. Swirl until dissolved. Cool and dilute with water to volume.",
+
+  standardization:
+    "Standardization with visual endpoint: Transfer 25 mL of the ceric ammonium sulfate solution into an Erlenmeyer flask, and add 2 g of potassium iodide and about 150 mL of water. Mix well. Add 1 mL of starch TS and titrate immediately with freshly standardized 0.1 N sodium thiosulfate VS until the blue color disappears. Standardization with potentiometric endpoint: Transfer 10 mL of the ceric ammonium sulfate solution into an Erlenmeyer flask, and add 2 g of potassium iodide and about 100 mL of water. Mix well. Immediately, titrate potentiometrically with freshly standardized 0.1 N sodium thiosulfate VS using a combined platinum electrode."
+},
+
+{
+  name: "0.01 N Ceric Ammonium Sulfate VS",
+  strength: "0.01 N",
+
+  formula:
+    "N = (mL Na2S2O3 × N Na2S2O3) / mL Ce(NH4)4(SO4)4",
+
+  preparation:
+    "Transfer 6.5 g of ceric ammonium sulfate to a 1000-mL volumetric flask containing a mixture of 30 mL of sulfuric acid and 500 mL of water. Swirl until dissolved. Cool and dilute with water to volume.",
+
+  standardization:
+    "Standardization with visual endpoint: Transfer 25 mL of the ceric ammonium sulfate solution into an Erlenmeyer flask, add 2 g of potassium iodide and about 150 mL of water. Mix well. Add 1 mL of starch TS and titrate immediately with freshly standardized 0.01 M sodium thiosulfate VS until the blue color disappears. Standardization with potentiometric endpoint: Transfer 10 mL of the ceric ammonium sulfate solution into an Erlenmeyer flask, add 2 g of potassium iodide and about 150 mL of water. Mix well. Titrate immediately with freshly standardized 0.01 M sodium thiosulfate VS using a combined platinum electrode."
+},
+
+{
+  name: "0.1 N Ceric Sulfate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = mg Na2C2O4 / (67.00 × mL Ce(SO4)2 solution)",
+
+  preparation:
+    "Use commercially available volumetric standard solution.",
+
+  standardization:
+    "Standardization with visual endpoint: Accurately weigh about 0.2 g of sodium oxalate, primary standard, dried according to the label instructions or, if this information is not available, dried at 105° for 2 h, and dissolve in 75 mL of water. Add, with stirring, 2 mL of sulfuric acid that has previously been mixed with 5 mL of water, mix well, add 10 mL of hydrochloric acid, and heat to between 70° and 75°. Titrate with 0.1 N ceric sulfate to a permanent slight yellow color. Each 6.700 mg of sodium oxalate is equivalent to 1 mL of 0.1 N ceric sulfate. Standardization with potentiometric endpoint: Accurately weigh about 0.1 g of sodium oxalate, primary standard, dried according to the label instructions or, if this information is not available, dried at 105° for 2 h, and dissolve in 75 mL of water. Add, with stirring, 1 mL of sulfuric acid that has previously been mixed with 2.5 mL of water, mix well, add 5 mL of hydrochloric acid, and heat to between 70° and 75°. Titrate potentiometrically with 0.1 N ceric sulfate using a combined platinum electrode."
+},
+
+{
+  name: "0.1 N Cupric Nitrate VS",
+  strength: "0.1 N",
+
+  formula: "",
+
+  preparation:
+    "Dissolve 23.3 g of cupric nitrate 2.5 hydrate, or 24.2 g of the trihydrate, in water to make 1000 mL.",
+
+  standardization:
+    "Transfer 20.0 mL of the solution to a 250-mL beaker. Add 2 mL of 5 M sodium nitrate, 20 mL of ammonium acetate TS, and sufficient water to make 100 mL. Titrate with 0.05 M edetate disodium VS. Determine the endpoint potentiometrically using a copper-ion selective electrode. Perform a blank determination, and make any necessary correction."
+},
+
+{
+  name: "Cupric Tartrate, Alkaline, Solution (Fehling’s Solution)",
+  strength: "",
+
+  formula: "",
+
+  preparation:
+    "Copper solution (Solution A): Transfer 34.639 g of cupric sulfate to a 500-mL volumetric flask, and dissolve in and dilute with water to volume. Filter, if necessary. Alkaline tartrate solution (Solution B): Transfer 173 g of potassium sodium tartrate and 50 g of sodium hydroxide to a 500-mL volumetric flask, and dissolve in and dilute with water to volume. Filter, if necessary. Just before use, prepare Cupric Tartrate, Alkaline, Solution by mixing equal volumes of Solution A and Solution B.",
+
+  standardization:
+    "Standard stock solution: Transfer 9.5 g of Sucrose to a 1-L volumetric flask, dissolve in 100 mL of water, add 5 mL of hydrochloric acid, and store for 3 days at 20°–25°. Dilute with water to volume. This solution is stable for several months. Invert sugar solution: Immediately before use in standardizing the Cupric Tartrate, Alkaline, Solution, transfer 25 mL of Standard stock solution to a 100-mL volumetric flask, and dilute with water to volume. Standardization: Transfer 20.0 mL of the Cupric Tartrate, Alkaline, Solution to a 400-mL flask containing a few boiling chips, and add 15 mL of water and 39.0 mL of Invert sugar solution. Mix by swirling at ambient temperature, and immediately place the flask on the wire gauze of the Apparatus. Adjust the burner so that the boiling point of the solution is reached in about 2 min. Boil gently but steadily for 2 min. As boiling continues, add 3–4 drops of methylene blue solution (1 in 100). Complete the titration within 1 min by adding the Invert sugar solution dropwise until the blue color disappears. Allow a 5-s reaction time between drops at the end of titration. Adjust the Cupric Tartrate, Alkaline, Solution for the correct amount of copper (equivalent to 100 mg of invert sugar), and restandardize if the total volume of Invert sugar solution is more or less than 40.0 mL."
+}
   ]
