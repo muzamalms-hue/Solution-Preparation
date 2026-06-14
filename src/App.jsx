@@ -46,4 +46,3 @@ return (
 
 export default App;
 
-Just addition krna hai pattern change na ho
