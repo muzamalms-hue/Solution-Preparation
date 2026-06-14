@@ -1,4 +1,4 @@
-[
+const standardSolutions = [
   {
     "name": "Ammonium Standard Solution (100 ppm NH4)",
     "strength": "100 ppm NH4",
@@ -370,4 +370,6 @@
     "preparation": "Immediately before use, dilute Zinc Standard Solution (100 ppm Zn) 10-fold with water.",
     "standardization": "Not required."
   }
-]
+];
+
+export default standardSolutions;
