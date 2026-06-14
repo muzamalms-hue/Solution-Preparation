@@ -1,7 +1,11 @@
 import { useState } from "react";
+
 import VolumetricSolution from "./VolumetricSolution";
 import StandardSolutions from "./StandardSolutions";
 import Indicators from "./Indicators";
+import BufferSolutions from "./BufferSolutions";
+import Reagents from "./Reagents";
+import TestSolutions from "./TestSolutions";
 
 export default function Solutions() {
   const [category, setCategory] = useState("");
@@ -16,6 +20,18 @@ export default function Solutions() {
 
   if (category === "indicator") {
     return <Indicators />;
+  }
+
+  if (category === "buffer") {
+    return <BufferSolutions />;
+  }
+
+  if (category === "reagents") {
+    return <Reagents />;
+  }
+
+  if (category === "test") {
+    return <TestSolutions />;
   }
 
   return (
@@ -34,16 +50,16 @@ export default function Solutions() {
         Indicator
       </button>
 
+      <button onClick={() => setCategory("buffer")}>
+        Buffer Solution
+      </button>
+
       <button onClick={() => setCategory("reagents")}>
         Reagents
       </button>
 
       <button onClick={() => setCategory("test")}>
         Test Solution
-      </button>
-
-      <button onClick={() => setCategory("buffer")}>
-        Buffer Solution
       </button>
     </div>
   );
