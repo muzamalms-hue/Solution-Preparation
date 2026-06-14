@@ -867,5 +867,174 @@ export default [
   "preparation": "Transfer 500 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
 
   "standardization": "Visual endpoint: Accurately weigh about 1.25 g potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Accurately weigh about 1.25 g potassium biphthalate and titrate potentiometrically using a combined pH electrode."
+  },
+  {
+  "name": "1 N Sodium Hydroxide VS",
+  "strength": "1 N",
+
+  "formula": "N = g KHC8H4O4 / (0.20422 × mL NaOH)",
+
+  "preparation": "Dissolve 162 g of sodium hydroxide in 150 mL of carbon dioxide-free water. Cool the solution to room temperature, allow insoluble matter to settle, and transfer the clear solution to a tight polyolefin container. Dilute appropriately with carbon dioxide-free water.",
+
+  "standardization": "Accurately weigh about 5 g of potassium biphthalate, previously crushed lightly and dried at 120°C for 2 h, and dissolve in 75 mL of carbon dioxide-free water. Add 2 drops of phenolphthalein TS and titrate with the sodium hydroxide solution to a permanent pink endpoint. Each 204.22 mg of potassium biphthalate is equivalent to 1 mL of 1 N sodium hydroxide. Restandardize the solution frequently."
+},
+{
+  "name": "0.1 N Alcoholic Sodium Hydroxide VS",
+  "strength": "0.1 N",
+
+  "formula": "N = mg benzoic acid / (122.1 × mL sodium hydroxide)",
+
+  "preparation": "Prepare a 0.1 N alcoholic sodium hydroxide solution using sodium hydroxide in alcohol.",
+
+  "standardization": "Dissolve about 200 mg of benzoic acid, accurately weighed, in 10 mL of alcohol and 2 mL of water. Add 2 drops of phenolphthalein TS and titrate with the alcoholic sodium hydroxide solution to a permanent pale pink endpoint."
+},
+{
+  "name": "0.1 N Sodium Hydroxide VS",
+  "strength": "0.1 N",
+
+  "formula": "N = mg benzoic acid / (122.1 × mL sodium hydroxide) OR N = g KHC8H4O4 / (0.20422 × mL NaOH solution)",
+
+  "preparation": "Transfer 100 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+
+  "standardization": "Method 1: Dissolve about 200 mg of benzoic acid in carbon dioxide-free water, warm until dissolved, cool to room temperature, add 2 drops of phenolphthalein TS, and titrate with 0.1 N sodium hydroxide VS to a pale pink endpoint. Method 2: Accurately weigh about 500 mg of potassium biphthalate, previously dried at 120°C for 2 h, dissolve in 75 mL of carbon dioxide-free water, add 2 drops of phenolphthalein TS, and titrate with 0.1 N sodium hydroxide VS to a permanent pink endpoint."
+},
+{
+  "name": "0.5 N Sodium Methoxide in Methanol VS",
+  "strength": "0.5 N",
+
+  "formula": "N = (mL HCl × N HCl) / mL sodium methoxide",
+
+  "preparation": "Weigh 11.5 g of freshly cut sodium metal and cut into small cubes. Place about 0.5 mL of anhydrous methanol in a round-bottom flask, add one cube of sodium metal, and when the reaction ceases add the remaining sodium metal. Slowly add 250 mL of anhydrous methanol through a condenser. After completion, cool and transfer the solution to a 1000-mL volumetric flask, then dilute with anhydrous methanol to volume.",
+
+  "standardization": "Accurately measure about 20 mL of freshly standardized 1 N hydrochloric acid VS into a 250-mL conical flask, add 0.25 mL of phenolphthalein TS, and titrate with the sodium methoxide solution to the first permanent pink color."
+},
+{
+  "name": "0.1 N Sodium Methoxide in Toluene VS",
+  "strength": "0.1 N",
+
+  "formula": "N = mg benzoic acid / (122.1 × mL sodium methoxide corrected for blank)",
+
+  "preparation": "Cool 150 mL of methanol in a 1000-mL volumetric flask and add about 2.5 g of freshly cut sodium metal in small portions. When dissolved, add toluene to volume and mix. Store protected from carbon dioxide and moisture.",
+
+  "standardization": "Accurately weigh about 400 mg of primary standard benzoic acid and dissolve in 80 mL of dimethylformamide. Add thymol blue indicator and titrate with the sodium methoxide solution to a blue endpoint. Correct for the volume consumed by 80 mL of dimethylformamide. Each 12.21 mg of benzoic acid is equivalent to 1 mL of 0.1 N sodium methoxide."
+},
+{
+  "name": "1 M Sodium Nitrite VS",
+  "strength": "1 M",
+
+  "formula": "M = mg sulfanilamide / (172.20 × mL NaNO2)",
+
+  "preparation": "Dissolve 6.900 g of sodium nitrite in water and dilute to 1000 mL.",
+
+  "standardization": "Accurately weigh about 500 mg of USP Sulfanilamide RS, previously dried at 105°C for 3 h. Dissolve in 20 mL of hydrochloric acid and 50 mL of water, cool to about 15°C, and titrate slowly with sodium nitrite solution. Determine the endpoint using the indicator specified in the monograph or potentiometrically. Each 172.20 mg of sulfanilamide is equivalent to 1 mL of 0.1000 M sodium nitrite."
+},
+{
+  "name": "0.02 M Sodium Tetraphenylboron VS",
+  "strength": "0.02 M",
+
+  "formula": "M = (mg KTPB × 0.9551) / (342.22 × 0.075)",
+
+  "preparation": "Dissolve an amount of sodium tetraphenylboron equivalent to 6.845 g of NaB(C6H5)4 in water and dilute to 1000 mL.",
+
+  "standardization": "Pipet two 75-mL portions into separate beakers. Add 1 mL of acetic acid and 25 mL of water to each. Add 25 mL of potassium biphthalate solution (1 in 20), allow to stand for 2 h, filter, wash with saturated potassium tetraphenylborate solution, dry the precipitate at 105°C for 1 h, and calculate the concentration. Each mg of potassium tetraphenylborate corresponds to 0.9551 mg sodium tetraphenylborate."
+    },
+
+  {
+    "name": "0.05 N Sodium Thiosulfate VS",
+    "strength": "0.05 N",
+
+    "formula": "N = (mg KIO3 × Assay/100) / (35.67 × [mL sample − mL blank])",
+
+    "preparation": "Transfer 500 mL of 0.1 N sodium thiosulfate VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+
+    "standardization": "Visual endpoint: Accurately weigh about 25 mg of primary standard potassium iodate, dissolve in 100 mL of water, add potassium iodide and hydrochloric acid, titrate liberated iodine with sodium thiosulfate until pale yellow, add starch TS and continue to disappearance of blue color. Perform a blank determination. Potentiometric endpoint: Use the same procedure and titrate using a combined platinum electrode. Restandardize weekly unless laboratory stability data support a longer interval."
+  },
+
+  {
+    "name": "0.1 N Sodium Thiosulfate VS",
+    "strength": "0.1 N",
+
+    "formula": "N = mg K2Cr2O7 / (49.04 × mL Na2S2O3)",
+
+    "preparation": "Dissolve about 26 g of sodium thiosulfate and 200 mg of lithium carbonate in 1000 mL of recently boiled and cooled water.",
+
+    "standardization": "Accurately weigh about 210 mg of primary standard potassium dichromate, dissolve in 100 mL of water, add potassium iodide, sodium bicarbonate and hydrochloric acid, allow to stand in the dark for 10 min, then titrate liberated iodine with sodium thiosulfate until yellowish green. Add starch TS and continue to a colorless endpoint. Perform a blank determination. Restandardize weekly unless stability data indicate otherwise."
+  },
+
+  {
+    "name": "0.01 M Sodium Thiosulfate VS",
+    "strength": "0.01 M",
+
+    "formula": "M = mg K2Cr2O7 / (49.04 × mL Na2S2O3)",
+
+    "preparation": "Transfer 100 mL of 0.1 N sodium thiosulfate VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+
+    "standardization": "Accurately weigh about 21 mg of primary standard potassium dichromate, dissolve in 100 mL of water, add potassium iodide, sodium bicarbonate and hydrochloric acid, allow to stand in the dark for 10 min, then titrate liberated iodine with 0.01 M sodium thiosulfate until yellowish green. Add starch TS and continue titration until the blue color disappears. Perform a blank determination. Restandardize weekly unless stability data indicate otherwise."
+  },
+
+  {
+    "name": "0.01 N Sulfuric Acid VS",
+    "strength": "0.01 N",
+
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+
+    "preparation": "Transfer 10 mL of 1 N sulfuric acid VS to a 1000-mL volumetric flask and dilute with water to volume.",
+
+    "standardization": "Accurately weigh about 50 mg of tromethamine dried according to label instructions or at 105°C for 3 h. Dissolve in 50 mL of water and titrate potentiometrically with 0.01 N sulfuric acid solution. Each 1.2114 mg of tromethamine is equivalent to 1 mL of 0.01 N sulfuric acid."
+  },
+
+  {
+    "name": "0.02 N Sulfuric Acid VS",
+    "strength": "0.02 N",
+
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+
+    "preparation": "Transfer 0.56 mL of sulfuric acid to a 1000-mL volumetric flask containing about 500 mL of water. Cool and dilute with water to volume.",
+
+    "standardization": "Accurately weigh about 50 mg of tromethamine, dried according to the label instructions or, if unavailable, dried at 105°C for 3 h. Dissolve in 50 mL of water and add 2 drops of bromocresol green TS. Titrate with the sulfuric acid solution to the endpoint. Each 2.4228 mg of tromethamine is equivalent to 1 mL of 0.02 N sulfuric acid."
+  },
+
+  {
+    "name": "0.05 N Sulfuric Acid VS",
+    "strength": "0.05 N",
+
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+
+    "preparation": "Transfer 1.4 mL of sulfuric acid to a 1000-mL volumetric flask containing about 500 mL of water. Cool and dilute with water to volume.",
+
+    "standardization": "Accurately weigh about 0.25 g of tromethamine, dried according to the label instructions or, if unavailable, dried at 105°C for 3 h. Dissolve in 50 mL of water and add 2 drops of bromocresol green TS. Titrate with the sulfuric acid solution to the endpoint. Each 6.057 mg of tromethamine is equivalent to 1 mL of 0.05 N sulfuric acid."
+  },
+
+  {
+    "name": "1 N Sulfuric Acid VS",
+    "strength": "1 N",
+
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+
+    "preparation": "Slowly add 27 mL of sulfuric acid to sufficient water and dilute with water to make 1000 mL.",
+
+    "standardization": "Accurately weigh about 5.0 g of tromethamine, dried according to the label instructions or, if unavailable, dried at 105°C for 3 h. Dissolve in 50 mL of water and add 2 drops of bromocresol green TS. Titrate with the sulfuric acid solution to the endpoint. Each 121.14 mg of tromethamine is equivalent to 1 mL of 1 N sulfuric acid."
+  },
+
+  {
+    "name": "0.5 N Sulfuric Acid in Alcohol VS",
+    "strength": "0.5 N",
+
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+
+    "preparation": "Transfer 13.9 mL of sulfuric acid to a 1000-mL volumetric flask containing about 500 mL of dehydrated alcohol. Cool and dilute with dehydrated alcohol to volume.",
+
+    "standardization": "Accurately weigh about 2.5 g of tromethamine, dried according to the label instructions or, if unavailable, dried at 105°C for 3 h. Dissolve in 50 mL of water and add 2 drops of bromocresol green TS. Titrate with the sulfuric acid solution to the endpoint. Each 60.57 mg of tromethamine is equivalent to 1 mL of 0.5 N sulfuric acid."
+  },
+
+  {
+    "name": "0.1 N Tetrabutylammonium Hydroxide VS",
+    "strength": "0.1 N",
+
+    "formula": "N = mg Benzoic Acid / (122.1 × mL Tetrabutylammonium Hydroxide)",
+
+    "preparation": "Dissolve 40 g of tetra-n-butylammonium iodide in 90 mL of anhydrous methanol. Cool in an ice bath, add 20 g of powdered silver oxide, and agitate for 60 min. Test for iodide and add additional silver oxide if required. Filter through a fine-porosity sintered-glass funnel. Rinse with anhydrous toluene and dilute with a mixture of four volumes of anhydrous toluene and one volume of anhydrous methanol to 1000 mL. Flush with dry carbon dioxide-free nitrogen for 10 min. Store protected from carbon dioxide and moisture and discard after 60 days.",
+
+    "standardization": "On the day of use, accurately weigh about 400 mg of primary standard benzoic acid and dissolve in dimethylformamide. Add thymol blue indicator and titrate with tetrabutylammonium hydroxide solution to a blue endpoint. Perform a blank determination and apply correction. Each 12.21 mg of benzoic acid is equivalent to 1 mL of 0.1 N tetrabutylammonium hydroxide."
   }
   ]
