@@ -1104,50 +1104,50 @@ export default [
   {
     name: "0.1 N Tetrabutylammonium Hydroxide in Methanol/Isopropyl Alcohol VS",
     strength: "0.1 N",
-    "formula": "N = mg Benzoic Acid / (122.1 × mL TBAH)",
-    "preparation": "Prepare from tetra-n-butylammonium iodide, silver oxide, methanol and isopropyl alcohol. Flush with dry carbon dioxide-free nitrogen and store protected from moisture and carbon dioxide.",
-    "standardization": "Dissolve about 400 mg benzoic acid in 80 mL dimethylformamide, add thymol blue indicator, titrate with tetrabutylammonium hydroxide to blue endpoint, and apply blank correction."
+    formula: "N = mg Benzoic Acid / (122.1 × mL TBAH)",
+    preparation: "Prepare from tetra-n-butylammonium iodide, silver oxide, methanol and isopropyl alcohol. Flush with dry carbon dioxide-free nitrogen and store protected from moisture and carbon dioxide.",
+    standardization: "Dissolve about 400 mg benzoic acid in 80 mL dimethylformamide, add thymol blue indicator, titrate with tetrabutylammonium hydroxide to blue endpoint, and apply blank correction."
   },
   {
-    "name": "0.1 M Tetramethylammonium Bromide VS",
-    "strength": "0.1 M",
-    "formula": "M = (mL AgNO3 × N AgNO3) / mL Tetramethylammonium Bromide",
-    "preparation": "Dissolve 15.41 g tetramethylammonium bromide in water and dilute to 1000 mL.",
-    "standardization": "Add dilute nitric acid and 0.1 N silver nitrate VS, then back-titrate excess silver nitrate with ammonium thiocyanate VS."
+    name: "0.1 M Tetramethylammonium Bromide VS",
+    strength: "0.1 M",
+    formula: "M = (mL AgNO3 × N AgNO3) / mL Tetramethylammonium Bromide",
+    preparation: "Dissolve 15.41 g tetramethylammonium bromide in water and dilute to 1000 mL.",
+    standardization: "Add dilute nitric acid and 0.1 N silver nitrate VS, then back-titrate excess silver nitrate with ammonium thiocyanate VS."
   },
   {
-    "name": "0.1 M Tetramethylammonium Chloride VS",
-    "strength": "0.1 M",
-    "formula": "M = (mL AgNO3 × N AgNO3) / mL Tetramethylammonium Chloride",
-    "preparation": "Dissolve 10.96 g tetramethylammonium chloride in water and dilute to 1000 mL.",
-    "standardization": "Add dilute nitric acid and 0.1 N silver nitrate VS, then back-titrate excess silver nitrate with ammonium thiocyanate VS using ferric ammonium sulfate indicator."
+    name: "0.1 M Tetramethylammonium Chloride VS",
+    strength: "0.1 M",
+    formula: "M = (mL AgNO3 × N AgNO3) / mL Tetramethylammonium Chloride",
+    preparation: "Dissolve 10.96 g tetramethylammonium chloride in water and dilute to 1000 mL.",
+    standardization: "Add dilute nitric acid and 0.1 N silver nitrate VS, then back-titrate excess silver nitrate with ammonium thiocyanate VS using ferric ammonium sulfate indicator."
   },
   {
-    "name": "1 N Titanium Trichloride VS",
-    "strength": "1 N",
-    "formula": "N = (mL Ferric Ammonium Sulfate × N Ferric Ammonium Sulfate) / mL TiCl3",
-    "preparation": "Add 75 mL titanium trichloride solution (1 in 5) to 75 mL hydrochloric acid and dilute with water to 1000 mL.",
-    "standardization": "Visual endpoint: Titrate ferric ammonium sulfate VS with titanium trichloride using ammonium thiocyanate indicator under inert atmosphere. Potentiometric endpoint: Use a combined platinum electrode."
+    name: "1 N Titanium Trichloride VS",
+    strength: "1 N",
+    formula: "N = (mL Ferric Ammonium Sulfate × N Ferric Ammonium Sulfate) / mL TiCl3",
+    preparation: "Add 75 mL titanium trichloride solution (1 in 5) to 75 mL hydrochloric acid and dilute with water to 1000 mL.",
+    standardization: "Visual endpoint: Titrate ferric ammonium sulfate VS with titanium trichloride using ammonium thiocyanate indicator under inert atmosphere. Potentiometric endpoint: Use a combined platinum electrode."
   },
   {
-    "name": "0.02 M Zinc Sulfate VS",
-    "strength": "0.02 M",
-    "formula": "M = (mL Edetate Disodium × M Edetate Disodium) / mL ZnSO4",
-    "preparation": "Dissolve 5.76 g zinc sulfate in water and dilute to 1000 mL.",
-    "standardization": "Titrate against 0.02 M or 0.05 M edetate disodium VS using acetic acid-ammonium acetate buffer and dithizone TS to a clear rose-pink endpoint."
+    name: "0.02 M Zinc Sulfate VS",
+    strength: "0.02 M",
+    formula: "M = (mL Edetate Disodium × M Edetate Disodium) / mL ZnSO4",
+    preparation: "Dissolve 5.76 g zinc sulfate in water and dilute to 1000 mL.",
+    standardization: "Titrate against 0.02 M or 0.05 M edetate disodium VS using acetic acid-ammonium acetate buffer and dithizone TS to a clear rose-pink endpoint."
   },
   {
-    "name": "0.05 M Zinc Sulfate VS",
-    "strength": "0.05 M",
-    "formula": "M = (mL Edetate Disodium × M Edetate Disodium) / mL ZnSO4",
-    "preparation": "Dissolve 14.4 g zinc sulfate in water and dilute to 1000 mL.",
-    "standardization": "Titrate against 0.05 M edetate disodium VS using acetic acid-ammonium acetate buffer, alcohol and dithizone TS to a clear rose-pink endpoint."
+    name: "0.05 M Zinc Sulfate VS",
+    strength: "0.05 M",
+    formula: "M = (mL Edetate Disodium × M Edetate Disodium) / mL ZnSO4",
+    preparation: "Dissolve 14.4 g zinc sulfate in water and dilute to 1000 mL.",
+    standardization: "Titrate against 0.05 M edetate disodium VS using acetic acid-ammonium acetate buffer, alcohol and dithizone TS to a clear rose-pink endpoint."
   },
   {
-    "name": "0.1 M Zinc Sulfate VS",
-    "strength": "0.1 M",
-    "formula": "M = (mL Edetate Disodium × M Edetate Disodium) / mL ZnSO4",
-    "preparation": "Dissolve 28.8 g zinc sulfate heptahydrate in water and dilute to 1000 mL.",
-    "standardization": "Titrate against 0.1 M edetate disodium VS using acetic acid-ammonium acetate buffer, alcohol and dithizone TS to a clear rose-pink endpoint."
+    name: "0.1 M Zinc Sulfate VS",
+    strength: "0.1 M",
+    formula: "M = (mL Edetate Disodium × M Edetate Disodium) / mL ZnSO4",
+    preparation: "Dissolve 28.8 g zinc sulfate heptahydrate in water and dilute to 1000 mL.",
+    standardization: "Titrate against 0.1 M edetate disodium VS using acetic acid-ammonium acetate buffer, alcohol and dithizone TS to a clear rose-pink endpoint."
   }
   ]
