@@ -1,7 +1,7 @@
 export default function StandardSolutions() {
   return (
     <div>
-      <h1>Standard Solutions Working</h1>
+      <h1>STANDARD PAGE OPENED</h1>
     </div>
   );
 }
