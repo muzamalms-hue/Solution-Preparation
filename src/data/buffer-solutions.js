@@ -62,6 +62,79 @@ const bufferSolutions = [
   },
 
   {
+    ph: "5.8",
+    naoh_ml: "3.72",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 3.72 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "6.0",
+    naoh_ml: "5.70",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 5.70 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "6.2",
+    naoh_ml: "8.60",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 8.60 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "6.4",
+    naoh_ml: "12.60",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 12.60 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "6.6",
+    naoh_ml: "17.80",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 17.80 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "6.8",
+    naoh_ml: "23.65",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 23.65 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "7.0",
+    naoh_ml: "29.63",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 29.63 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "7.2",
+    naoh_ml: "35.00",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 35.00 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "7.4",
+    naoh_ml: "39.50",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 39.50 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "7.6",
+    naoh_ml: "42.80",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 42.80 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "7.8",
+    naoh_ml: "45.20",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 45.20 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  {
+    ph: "8.0",
+    naoh_ml: "46.80",
+    preparation:
+      "Mix 50 ml of 0.2M potassium dihydrogen orthophosphate with 46.80 ml of 0.2M sodium hydroxide VS and dilute to 200 ml with water."
+  },
+  
+  {
     name: "Phosphate Buffer pH 7.4",
     preparation:
       "Dissolve potassium dihydrogen phosphate, disodium hydrogen phosphate and sodium chloride in water and adjust pH."
