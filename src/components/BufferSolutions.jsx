@@ -19,27 +19,27 @@ export default function BufferSolutions() {
 
         <h2 className="title">{selected.name}</h2>
 
-        <div className="result-card">
-          <h3>Composition</h3>
-          <p>{selected.composition}</p>
-        </div>
-
-        <div className="result-card">
-          <h3>pH Range</h3>
-          <p>{selected.phRange}</p>
-        </div>
-
-        {selected.use && (
+        {/* SAFE ONLY FIELDS THAT EXIST */}
+        {selected.preparation && (
           <div className="result-card">
-            <h3>Use</h3>
-            <p>{selected.use}</p>
+            <h3>Preparation</h3>
+            <p>{selected.preparation}</p>
           </div>
         )}
 
-        <div className="result-card">
-          <h3>Preparation</h3>
-          <p>{selected.preparation || "No preparation data available"}</p>
-        </div>
+        {selected.ph && (
+          <div className="result-card">
+            <h3>pH</h3>
+            <p>{selected.ph}</p>
+          </div>
+        )}
+
+        {selected.naoh_ml && (
+          <div className="result-card">
+            <h3>NaOH Volume</h3>
+            <p>{selected.naoh_ml} mL</p>
+          </div>
+        )}
       </div>
     );
   }
@@ -49,7 +49,6 @@ export default function BufferSolutions() {
     <div className="container">
       <h2 className="title">Buffer Solutions</h2>
 
-      {/* SEARCH BAR */}
       <input
         className="search-input"
         type="text"
@@ -58,7 +57,6 @@ export default function BufferSolutions() {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      {/* DROPDOWN LIST */}
       {search && (
         <div className="dropdown">
           {filtered.slice(0, 5).map((item, index) => (
@@ -73,29 +71,24 @@ export default function BufferSolutions() {
         </div>
       )}
 
-      {/* DEFAULT GRID (optional fallback) */}
       {!search && (
         <div className="solutions-grid">
           {bufferSolutions.slice(0, 6).map((item, index) => (
             <div
-              className="solution-card"
               key={index}
+              className="solution-card"
               onClick={() => setSelected(item)}
             >
-              <h3 className="solution-name">{item.name}</h3>
+              <h3>{item.name}</h3>
 
-              <div className="solution-details">
-                <p>
-                  <strong>Composition:</strong> {item.composition}
-                </p>
-                <p>
-                  <strong>pH Range:</strong> {item.phRange}
-                </p>
-              </div>
+              <p>
+                <strong>Preparation:</strong>{" "}
+                {item.preparation?.slice(0, 60)}...
+              </p>
             </div>
           ))}
         </div>
       )}
     </div>
   );
-            }
+}
