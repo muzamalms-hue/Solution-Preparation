@@ -176,5 +176,19 @@ export default [
 
   standardization:
     "Standard stock solution: Transfer 9.5 g of Sucrose to a 1-L volumetric flask, dissolve in 100 mL of water, add 5 mL of hydrochloric acid, and store for 3 days at 20°–25°. Dilute with water to volume. This solution is stable for several months. Invert sugar solution: Immediately before use in standardizing the Cupric Tartrate, Alkaline, Solution, transfer 25 mL of Standard stock solution to a 100-mL volumetric flask, and dilute with water to volume. Standardization: Transfer 20.0 mL of the Cupric Tartrate, Alkaline, Solution to a 400-mL flask containing a few boiling chips, and add 15 mL of water and 39.0 mL of Invert sugar solution. Mix by swirling at ambient temperature, and immediately place the flask on the wire gauze of the Apparatus. Adjust the burner so that the boiling point of the solution is reached in about 2 min. Boil gently but steadily for 2 min. As boiling continues, add 3–4 drops of methylene blue solution (1 in 100). Complete the titration within 1 min by adding the Invert sugar solution dropwise until the blue color disappears. Allow a 5-s reaction time between drops at the end of titration. Adjust the Cupric Tartrate, Alkaline, Solution for the correct amount of copper (equivalent to 100 mg of invert sugar), and restandardize if the total volume of Invert sugar solution is more or less than 40.0 mL."
+},
+
+  {
+  name: "0.1 N Hydrochloric Acid VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mg tromethamine × Assay/100) / (121.14 × mL HCl)",
+
+  preparation:
+    "Dilute 8.5 mL of hydrochloric acid with water to 1000 mL.",
+
+  standardization:
+    "Visual endpoint: Accurately weigh about 0.5 g of tromethamine, dried according to the label instructions or dried at 105° for 3 h. Dissolve in 50 mL of water, add 2 drops of bromocresol green TS, and titrate with the hydrochloric acid solution to a pale yellow endpoint. Each 12.114 mg of tromethamine is equivalent to 1 mL of 0.1 N hydrochloric acid. Potentiometric endpoint: Accurately weigh about 100 mg of tromethamine, dried according to the label instructions or dried at 105° for 3 h. Dissolve in 50 mL of water and titrate potentiometrically with the hydrochloric acid solution using a combined pH electrode. Each 12.114 mg of tromethamine is equivalent to 1 mL of 0.1 N hydrochloric acid."
 }
   ]
