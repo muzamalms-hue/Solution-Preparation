@@ -466,4 +466,161 @@ export default [
   standardization:
     "Accurately weigh about 150 mg of sodium sulfate, previously dried at 105° for 4 h, and dissolve in 50 mL of water. Add 50 mL of a mixture of water and formaldehyde (1:1), and stir for about 1 min. Determine the endpoint potentiometrically using a lead ion selective electrode. Perform a blank determination, and make any necessary corrections. Each 14.204 mg of sodium sulfate is equivalent to 1 mL of 0.1 M lead perchlorate."
 },
+  {
+  name: "0.1 N Lithium Methoxide in Chlorobenzene VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = mg Benzoic Acid / (122.1 × mL Lithium Methoxide)",
+
+  preparation:
+    "Dissolve 700 mg of freshly cut lithium metal in 150 mL of methanol, cooling during addition. After reaction completion, add 850 mL of chlorobenzene. If cloudiness or precipitation occurs, add sufficient methanol to clarify the solution.",
+
+  standardization:
+    "Accurately weigh about 400 mg of primary standard benzoic acid and dissolve in 80 mL of dimethylformamide. Add 3 drops of a 1-in-100 solution of thymol blue in dimethylformamide and titrate with the lithium methoxide solution to a blue endpoint. Correct for the volume consumed by 80 mL of dimethylformamide. Each 12.21 mg of benzoic acid is equivalent to 1 mL of 0.1 N lithium methoxide."
+},
+
+{
+  name: "0.02 N Lithium Methoxide in Methanol VS",
+  strength: "0.02 N",
+
+  formula:
+    "N = mg Benzoic Acid / (122.1 × mL Lithium Methoxide)",
+
+  preparation:
+    "Dissolve 0.12 g of freshly cut lithium metal in 150 mL of methanol, cooling during addition. After reaction completion, add 850 mL of methanol and mix.",
+
+  standardization:
+    "Accurately weigh about 100 mg of primary standard benzoic acid and dissolve in 80 mL of dimethylformamide. Add 3 drops of a 1-in-100 solution of thymol blue in dimethylformamide and titrate with the lithium methoxide solution to a blue endpoint. Correct for the volume consumed by 80 mL of dimethylformamide. Each 2.442 mg of benzoic acid is equivalent to 1 mL of 0.02 N lithium methoxide."
+},
+
+{
+  name: "0.1 N Lithium Methoxide in Methanol VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = mg Benzoic Acid / (122.1 × mL Lithium Methoxide)",
+
+  preparation:
+    "Dissolve 700 mg of freshly cut lithium metal in 150 mL of methanol, cooling during addition. After reaction completion, add 850 mL of methanol. If cloudiness or precipitation occurs, add sufficient methanol to clarify the solution.",
+
+  standardization:
+    "Accurately weigh about 400 mg of primary standard benzoic acid and dissolve in 80 mL of dimethylformamide. Add 3 drops of a 1-in-100 solution of thymol blue in dimethylformamide and titrate with the lithium methoxide solution to a blue endpoint. Correct for the volume consumed by 80 mL of dimethylformamide. Each 12.21 mg of benzoic acid is equivalent to 1 mL of 0.1 N lithium methoxide."
+},
+
+{
+  name: "0.1 N Lithium Methoxide in Toluene VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = mg Benzoic Acid / (122.1 × mL Lithium Methoxide)",
+
+  preparation:
+    "Dissolve 700 mg of freshly cut lithium metal in 150 mL of methanol, cooling during addition. After reaction completion, add 850 mL of toluene. If cloudiness or precipitation occurs, add sufficient methanol to clarify the solution.",
+
+  standardization:
+    "Accurately weigh about 400 mg of primary standard benzoic acid and dissolve in 80 mL of dimethylformamide. Add 3 drops of a 1-in-100 solution of thymol blue in dimethylformamide and titrate with the lithium methoxide solution to a blue endpoint. Correct for the volume consumed by 80 mL of dimethylformamide. Each 12.21 mg of benzoic acid is equivalent to 1 mL of 0.1 N lithium methoxide."
+},
+
+{
+  name: "0.01 M Magnesium Chloride VS",
+  strength: "0.01 M",
+
+  preparation:
+    "Dissolve about 2.04 g of magnesium chloride in freshly boiled and cooled water and dilute to 1000 mL.",
+
+  standardization:
+    "Accurately measure 25 mL of the prepared magnesium chloride solution. Add 50 mL of water, 3 mL of ammonia-ammonium chloride buffer TS, and 0.04 g of eriochrome black T-sodium chloride reagent. Titrate with 0.05 M edetate disodium VS until the red-purple color changes to blue-purple."
+},
+
+{
+  name: "0.1 M Mercuric Nitrate VS",
+  strength: "0.1 M",
+
+  formula:
+    "M = (mL NH4SCN × N NH4SCN) / (mL Hg(NO3)2 × 2)",
+
+  preparation:
+    "Dissolve about 35 g of mercuric nitrate in a mixture of 5 mL of nitric acid and 500 mL of water, and dilute with water to 1000 mL.",
+
+  standardization:
+    "Transfer an accurately measured volume of about 20 mL of the solution to a conical flask. Add 2 mL of nitric acid and 2 mL of ferric ammonium sulfate TS. Cool below 20°C and titrate with 0.1 N ammonium thiocyanate VS to the first appearance of a permanent brownish color."
+},
+  {
+  name: "0.1 N Oxalic Acid VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mL KMnO4 × N KMnO4) / mL H2C2O4",
+
+  preparation:
+    "Dissolve 6.45 g of oxalic acid in water and make up to 1000 mL.",
+
+  standardization:
+    "Transfer 10 mL of oxalic acid solution to an appropriate flask and titrate with freshly standardized 0.1 N potassium permanganate VS until a pale pink color, which persists for 15 s, is produced. Preserve in glass-stoppered bottles protected from light."
+},
+
+{
+  name: "0.1 N Perchloric Acid in Dioxane VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = g potassium biphthalate / (0.20422 × mL HClO4 solution corrected for blank)",
+
+  preparation:
+    "Mix 8.5 mL of perchloric acid with sufficient dioxane to make 1000 mL.",
+
+  standardization:
+    "Accurately weigh about 700 mg of potassium biphthalate, previously crushed lightly and dried at 120° for 2 h, and dissolve in 50 mL of glacial acetic acid in a 250-mL flask. Add 2 drops of crystal violet TS and titrate with the perchloric acid solution until the violet color changes to bluish green. Carry out a blank determination. Each 20.422 mg of potassium biphthalate is equivalent to 1 mL of 0.1 N perchloric acid."
+},
+
+{
+  name: "0.1 N Perchloric Acid in Glacial Acetic Acid VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = g potassium biphthalate / (0.20422 × mL HClO4 corrected for blank)",
+
+  preparation:
+    "Mix 8.5 mL of perchloric acid with 500 mL of glacial acetic acid and 21 mL of acetic anhydride, cool, and add glacial acetic acid to make 1000 mL. Alternatively, mix 11 mL of 60% perchloric acid with 500 mL of glacial acetic acid and 30 mL of acetic anhydride, cool, and add glacial acetic acid to make 1000 mL. Allow to stand for 1 day and adjust water content according to USP requirements.",
+
+  standardization:
+    "Accurately weigh about 700 mg of potassium biphthalate, previously crushed lightly and dried at 120° for 2 h, and dissolve in 50 mL of glacial acetic acid in a 250-mL flask. Add 2 drops of crystal violet TS and titrate with the perchloric acid solution until the violet color changes to blue-green. Deduct the volume of perchloric acid consumed by 50 mL of glacial acetic acid. Each 20.422 mg of potassium biphthalate is equivalent to 1 mL of 0.1 N perchloric acid."
+},
+
+{
+  name: "0.1 N Potassium Arsenite VS",
+  strength: "0.1 N",
+
+  preparation:
+    "Dissolve 4.9455 g of arsenic trioxide primary standard, dried according to label instructions or at 105° for 1 h, in 75 mL of 1 N potassium hydroxide. Add 40 g of potassium bicarbonate dissolved in about 200 mL of water and dilute with water to 1000.0 mL."
+},
+
+{
+  name: "0.1 N Potassium Bromate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mL Na2S2O3 × N Na2S2O3) / mL KBrO3 solution",
+
+  preparation:
+    "Dissolve 2.784 g of potassium bromate in water and make up to 1000 mL.",
+
+  standardization:
+    "Transfer an accurately measured volume of about 40 mL of the solution to a glass-stoppered flask, add 3 g of potassium iodide followed by 3 mL of hydrochloric acid. Allow to stand for 5 min, then titrate the liberated iodine with 0.1 N sodium thiosulfate VS, adding 3 mL of starch TS as the endpoint is approached. Correct for a blank determination and calculate the normality."
+},
+
+{
+  name: "0.1 N Potassium Bromide-Bromate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mL Na2S2O3 × N Na2S2O3) / mL KBrO3/KBr solution",
+
+  preparation:
+    "Dissolve 2.78 g of potassium bromate and 12.0 g of potassium bromide in water, and dilute with water to 1000 mL.",
+
+  standardization:
+    "Transfer an accurately measured volume of about 40 mL of the solution to a glass-stoppered flask, add 3 g of potassium iodide followed by 3 mL of hydrochloric acid. Allow to stand for 5 min, then titrate the liberated iodine with 0.1 N sodium thiosulfate VS, adding 3 mL of starch TS as the endpoint is approached. Correct for a blank determination and calculate the normality."
+  },
   ]
