@@ -13,16 +13,11 @@ export default function StandardSolutions() {
   if (selected) {
     return (
       <div className="container">
-        <button
-          onClick={() => setSelected(null)}
-          className="back-btn"
-        >
+        <button onClick={() => setSelected(null)} className="back-btn">
           ← Back
         </button>
 
-        <h2 className="title">
-          {selected.name}
-        </h2>
+        <h2 className="title">{selected.name}</h2>
 
         {selected.strength && (
           <div className="result-card">
@@ -45,12 +40,7 @@ export default function StandardSolutions() {
           </div>
         )}
 
-        {selected.standardization && (
-          <div className="result-card">
-            <h3>Standardization</h3>
-            <p>{selected.standardization}</p>
-          </div>
-        )}
+        {/* ❌ standardization removed */}
       </div>
     );
   }
@@ -58,9 +48,7 @@ export default function StandardSolutions() {
   // LIST PAGE
   return (
     <div className="container">
-      <h2 className="title">
-        Standard Solutions
-      </h2>
+      <h2 className="title">Standard Solutions</h2>
 
       <input
         className="search-input"
@@ -85,4 +73,4 @@ export default function StandardSolutions() {
       </div>
     </div>
   );
-}
+        }
