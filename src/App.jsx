@@ -4,7 +4,7 @@ import AcidBase from "./components/AcidBase";
 import Molarity from "./components/Molarity";
 import StockDilution from "./components/StockDilution";
 import Solutions from "./components/Solutions";
-import Indicators from "./components/Indicators";
+
 import BottomNav from "./components/BottomNav";
 
 function App() {
