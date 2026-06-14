@@ -6,7 +6,9 @@ export default function BufferSolutions() {
   const [selected, setSelected] = useState(null);
 
   const filtered = bufferSolutions.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase())
+    (item.name || item.ph || "")
+      .toLowerCase()
+      .includes(search.toLowerCase())
   );
 
   // DETAIL VIEW
@@ -17,9 +19,10 @@ export default function BufferSolutions() {
           ← Back
         </button>
 
-        <h2 className="title">{selected.name}</h2>
+        <h2 className="title">
+          {selected.name || `pH ${selected.ph}`}
+        </h2>
 
-        {/* SAFE ONLY FIELDS THAT EXIST */}
         {selected.preparation && (
           <div className="result-card">
             <h3>Preparation</h3>
@@ -65,7 +68,7 @@ export default function BufferSolutions() {
               className="dropdown-item"
               onClick={() => setSelected(item)}
             >
-              {item.name}
+              {item.name || `pH ${item.ph}`}
             </div>
           ))}
         </div>
@@ -79,11 +82,11 @@ export default function BufferSolutions() {
               className="solution-card"
               onClick={() => setSelected(item)}
             >
-              <h3>{item.name}</h3>
+              <h3>{item.name || `pH ${item.ph}`}</h3>
 
               <p>
                 <strong>Preparation:</strong>{" "}
-                {item.preparation?.slice(0, 60)}...
+                {item.preparation?.slice(0, 60) || "Click to view details"}
               </p>
             </div>
           ))}
