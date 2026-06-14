@@ -787,99 +787,100 @@ export default [
     "Transfer about 100 mg of primary or volumetric standard sodium chloride, accurately weighed and dried according to the label instructions or at 110° for 2 h, to a 150-mL beaker. Dissolve in 5 mL of water and add 5 mL of acetic acid, 50 mL of methanol, and about 0.5 mL of eosin Y TS. Stir and titrate with the silver nitrate solution."
   },
   {
-  "name": "0.001 N Silver Nitrate VS",
+  name: "0.001 N Silver Nitrate VS",
   "strength": "0.001 N",
 
-  "formula": "N = (mL NaCl × N NaCl) / mL AgNO3",
+  formula: "N = (mL NaCl × N NaCl) / mL AgNO3",
 
-  "preparation": "Transfer 10 mL of 0.1 N silver nitrate VS to a 1000-mL volumetric flask and dilute with water to volume. Alternatively, dissolve about 175 mg of silver nitrate in 1000 mL of water.",
+  preparation: "Transfer 10 mL of 0.1 N silver nitrate VS to a 1000-mL volumetric flask and dilute with water to volume. Alternatively, dissolve about 175 mg of silver nitrate in 1000 mL of water.",
 
-  "standardization": "Transfer 0.10 mL of 0.1 N sodium chloride VS to a 150-mL beaker containing 50 mL of water, and add 50 mL of alcohol, 5 mL of acetic acid, and 0.5 mL of eosin Y TS. Stir and titrate with the silver nitrate solution. Potentiometric endpoint may also be used with a combined silver electrode."
+  standardization: "Transfer 0.10 mL of 0.1 N sodium chloride VS to a 150-mL beaker containing 50 mL of water, and add 50 mL of alcohol, 5 mL of acetic acid, and 0.5 mL of eosin Y TS. Stir and titrate with the silver nitrate solution. Potentiometric endpoint may also be used with a combined silver electrode."
   },
   {
-  "name": "0.05 N Silver Nitrate VS",
-  "strength": "0.05 N",
+  name: "0.05 N Silver Nitrate VS",
+  strength: "0.05 N",
 
-  "formula": "N = mg NaCl / (mL AgNO3 × 58.44)",
+  formula: "N = mg NaCl / (mL AgNO3 × 58.44)",
 
-  "preparation": "Dissolve 8.75 g of silver nitrate in water and dilute to 1000 mL.",
+  preparation: "Dissolve 8.75 g of silver nitrate in water and dilute to 1000 mL.",
 
-  "standardization": "Transfer about 50 mg of dried sodium chloride primary standard to a 150-mL beaker. Dissolve in 5 mL of water and add 5 mL of acetic acid, 50 mL of methanol, and 0.5 mL of eosin Y TS. Stir and titrate with the silver nitrate solution."
+  standardization: "Transfer about 50 mg of dried sodium chloride primary standard to a 150-mL beaker. Dissolve in 5 mL of water and add 5 mL of acetic acid, 50 mL of methanol, and 0.5 mL of eosin Y TS. Stir and titrate with the silver nitrate solution."
   },
   {
-  "name": "0.002 N Silver Nitrate in Isopropyl Alcohol VS",
-  "strength": "0.002 N",
+  name: "0.002 N Silver Nitrate in Isopropyl Alcohol VS",
+  strength: "0.002 N",
 
-  "preparation": "Transfer 20.0 mL of 0.1 N silver nitrate VS to a 1000-mL volumetric flask and dilute with isopropyl alcohol to volume. Store in a low-actinic flask."
+  preparation: "Transfer 20.0 mL of 0.1 N silver nitrate VS to a 1000-mL volumetric flask and dilute with isopropyl alcohol to volume. Store in a low-actinic flask."
   },
   {
-  "name": "0.05 M Sodium Arsenite VS",
-  "strength": "0.05 M",
+  name: "0.05 M Sodium Arsenite VS",
+  strength: "0.05 M",
 
-  "preparation": "Transfer 4.9455 g of arsenic trioxide, previously dried at 100°C to constant weight, to a 1000-mL volumetric flask. Dissolve in 40 mL of 1 N sodium hydroxide. Neutralize with 1 N sulfuric acid or 1 N hydrochloric acid until neutral or slightly acidic to litmus. Add 30 g of sodium bicarbonate, dilute with water to volume, and mix."
+  preparation: "Transfer 4.9455 g of arsenic trioxide, previously dried at 100°C to constant weight, to a 1000-mL volumetric flask. Dissolve in 40 mL of 1 N sodium hydroxide. Neutralize with 1 N sulfuric acid or 1 N hydrochloric acid until neutral or slightly acidic to litmus. Add 30 g of sodium bicarbonate, dilute with water to volume, and mix."
   },
   {
-  "name": "0.025 N Sodium Hydroxide VS",
-  "strength": "0.025 N",
+  name: "0.025 N Sodium Hydroxide VS",
+  strength: "0.025 N",
 
-  "formula": "N = g KHC8H4O4 / (0.20422 × mL NaOH)",
+  formula: "N = g KHC8H4O4 / (0.20422 × mL NaOH)",
 
-  "preparation": "Transfer 25 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+  preparation: "Transfer 25 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
 
-  "standardization": "Accurately weigh about 125 mg of potassium biphthalate, previously crushed lightly and dried at 120°C for 2 h. Dissolve in 75 mL of carbon dioxide-free water and determine the endpoint potentiometrically. Each 5.1055 mg of potassium biphthalate is equivalent to 1 mL of 0.025 N sodium hydroxide."
+  standardization: "Accurately weigh about 125 mg of potassium biphthalate, previously crushed lightly and dried at 120°C for 2 h. Dissolve in 75 mL of carbon dioxide-free water and determine the endpoint potentiometrically. Each 5.1055 mg of potassium biphthalate is equivalent to 1 mL of 0.025 N sodium hydroxide."
   },
   {
-  "name": "0.01 N Sodium Hydroxide VS",
-  "strength": "0.01 N",
+  name: "0.01 N Sodium Hydroxide VS",
+  strength: "0.01 N",
 
-  "formula": "N = g KHC8H4O4 / (0.20422 × mL NaOH)",
+  formula: "N = g KHC8H4O4 / (0.20422 × mL NaOH)",
 
-  "preparation": "Transfer 10 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+  preparation: "Transfer 10 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
 
-  "standardization": "Visual endpoint: Accurately weigh about 50 mg of potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add 2 drops of phenolphthalein TS, and titrate to a permanent pink color. Potentiometric endpoint: Use about 25 mg potassium biphthalate and titrate potentiometrically."
+  standardization: "Visual endpoint: Accurately weigh about 50 mg of potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add 2 drops of phenolphthalein TS, and titrate to a permanent pink color. Potentiometric endpoint: Use about 25 mg potassium biphthalate and titrate potentiometrically."
     },
   {
-  "name": "0.02 N Sodium Hydroxide VS",
-  "strength": "0.02 N",
+  name: "0.02 N Sodium Hydroxide VS",
+  strength: "0.02 N",
 
-  "formula": "N = (g KHC8H4O4 × Assay/100) / (0.20422 × mL NaOH)",
+  "formula: "N = (g KHC8H4O4 × Assay/100) / (0.20422 × mL NaOH)",
 
-  "preparation": "Transfer 20 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+  "preparation: "Transfer 20 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
 
-  "standardization": "Visual endpoint: Accurately weigh about 100 mg potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Use about 50 mg potassium biphthalate and titrate using a combined pH electrode."
+  "standardization: "Visual endpoint: Accurately weigh about 100 mg potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Use about 50 mg potassium biphthalate and titrate using a combined pH electrode."
   },
   {
-  "name": "0.05 N Sodium Hydroxide VS",
-  "strength": "0.05 N",
+  "name: "0.05 N Sodium Hydroxide VS",
+  "strength: "0.05 N",
 
-  "formula": "N = (g KHC8H4O4 × Assay/100) / (0.20422 × mL NaOH)",
+  "formula: "N = (g KHC8H4O4 × Assay/100) / (0.20422 × mL NaOH)",
 
-  "preparation": "Transfer 50 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+  "preparation: "Transfer 50 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
 
-  "standardization": "Visual endpoint: Accurately weigh about 250 mg potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Use about 125 mg potassium biphthalate and titrate using a combined pH electrode."
+  "standardization: "Visual endpoint: Accurately weigh about 250 mg potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Use about 125 mg potassium biphthalate and titrate using a combined pH electrode."
+  },
+  
+  {
+  "name: "0.5 N Sodium Hydroxide VS",
+  "strength: "0.5 N",
+
+  "formula: "N = (g KHC8H4O4 × Assay/100) / (0.20422 × mL NaOH)",
+
+  "preparation: "Transfer 500 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+
+  "standardization: "Visual endpoint: Accurately weigh about 1.25 g potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Accurately weigh about 1.25 g potassium biphthalate and titrate potentiometrically using a combined pH electrode."
   },
   {
-  "name": "0.5 N Sodium Hydroxide VS",
-  "strength": "0.5 N",
-
-  "formula": "N = (g KHC8H4O4 × Assay/100) / (0.20422 × mL NaOH)",
-
-  "preparation": "Transfer 500 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
-
-  "standardization": "Visual endpoint: Accurately weigh about 1.25 g potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Accurately weigh about 1.25 g potassium biphthalate and titrate potentiometrically using a combined pH electrode."
-  },
-  {
-  "name": "1 N Sodium Hydroxide VS",
+  "name: "1 N Sodium Hydroxide VS",
   "strength": "1 N",
 
-  "formula": "N = g KHC8H4O4 / (0.20422 × mL NaOH)",
+  "formula: "N = g KHC8H4O4 / (0.20422 × mL NaOH)",
 
-  "preparation": "Dissolve 162 g of sodium hydroxide in 150 mL of carbon dioxide-free water. Cool the solution to room temperature, allow insoluble matter to settle, and transfer the clear solution to a tight polyolefin container. Dilute appropriately with carbon dioxide-free water.",
+  "preparation: "Dissolve 162 g of sodium hydroxide in 150 mL of carbon dioxide-free water. Cool the solution to room temperature, allow insoluble matter to settle, and transfer the clear solution to a tight polyolefin container. Dilute appropriately with carbon dioxide-free water.",
 
-  "standardization": "Accurately weigh about 5 g of potassium biphthalate, previously crushed lightly and dried at 120°C for 2 h, and dissolve in 75 mL of carbon dioxide-free water. Add 2 drops of phenolphthalein TS and titrate with the sodium hydroxide solution to a permanent pink endpoint. Each 204.22 mg of potassium biphthalate is equivalent to 1 mL of 1 N sodium hydroxide. Restandardize the solution frequently."
+  "standardization: "Accurately weigh about 5 g of potassium biphthalate, previously crushed lightly and dried at 120°C for 2 h, and dissolve in 75 mL of carbon dioxide-free water. Add 2 drops of phenolphthalein TS and titrate with the sodium hydroxide solution to a permanent pink endpoint. Each 204.22 mg of potassium biphthalate is equivalent to 1 mL of 1 N sodium hydroxide. Restandardize the solution frequently."
 },
 {
-  "name": "0.1 N Alcoholic Sodium Hydroxide VS",
+  "name: "0.1 N Alcoholic Sodium Hydroxide VS",
   "strength": "0.1 N",
 
   "formula": "N = mg benzoic acid / (122.1 × mL sodium hydroxide)",
@@ -1036,5 +1037,117 @@ export default [
     "preparation": "Dissolve 40 g of tetra-n-butylammonium iodide in 90 mL of anhydrous methanol. Cool in an ice bath, add 20 g of powdered silver oxide, and agitate for 60 min. Test for iodide and add additional silver oxide if required. Filter through a fine-porosity sintered-glass funnel. Rinse with anhydrous toluene and dilute with a mixture of four volumes of anhydrous toluene and one volume of anhydrous methanol to 1000 mL. Flush with dry carbon dioxide-free nitrogen for 10 min. Store protected from carbon dioxide and moisture and discard after 60 days.",
 
     "standardization": "On the day of use, accurately weigh about 400 mg of primary standard benzoic acid and dissolve in dimethylformamide. Add thymol blue indicator and titrate with tetrabutylammonium hydroxide solution to a blue endpoint. Perform a blank determination and apply correction. Each 12.21 mg of benzoic acid is equivalent to 1 mL of 0.1 N tetrabutylammonium hydroxide."
+  },
+  {
+    "name": "0.05 N Sodium Thiosulfate VS",
+    "strength": "0.05 N",
+    "formula": "N = [mg KIO3 × (Assay/100)] / [35.67 × (mL Sample − mL Blank)]",
+    "preparation": "Transfer 500 mL of 0.1 N sodium thiosulfate VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+    "standardization": "Visual endpoint: Weigh about 25 mg potassium iodate, dissolve in 100 mL water, add potassium iodide and hydrochloric acid, titrate with sodium thiosulfate to pale yellow, add starch TS and continue until blue color disappears. Perform blank determination. Potentiometric endpoint: Same procedure using a combined platinum electrode."
+  },
+  {
+    "name": "0.1 N Sodium Thiosulfate VS",
+    "strength": "0.1 N",
+    "formula": "N = mg K2Cr2O7 / (49.04 × mL Na2S2O3)",
+    "preparation": "Dissolve about 26 g sodium thiosulfate and 200 mg lithium carbonate in 1000 mL of recently boiled and cooled water.",
+    "standardization": "Weigh about 210 mg potassium dichromate, dissolve in 100 mL water, add potassium iodide, sodium bicarbonate and hydrochloric acid, allow to stand in the dark for 10 min, then titrate liberated iodine with sodium thiosulfate using starch TS near endpoint. Perform blank determination."
+  },
+  {
+    "name": "0.01 M Sodium Thiosulfate VS",
+    "strength": "0.01 M",
+    "formula": "M = mg K2Cr2O7 / (49.04 × mL Na2S2O3)",
+    "preparation": "Transfer 100 mL of 0.1 N sodium thiosulfate VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+    "standardization": "Weigh about 21 mg potassium dichromate, dissolve in 100 mL water, add potassium iodide, sodium bicarbonate and hydrochloric acid, allow to stand in dark for 10 min, titrate liberated iodine with 0.01 M sodium thiosulfate using starch TS. Perform blank determination."
+  },
+  {
+    "name": "0.01 N Sulfuric Acid VS",
+    "strength": "0.01 N",
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+    "preparation": "Transfer 10 mL of 1 N sulfuric acid VS to a 1000-mL volumetric flask and dilute with water to volume.",
+    "standardization": "Weigh about 50 mg tromethamine dried at 105°C for 3 h, dissolve in 50 mL water, and titrate potentiometrically with sulfuric acid solution."
+  },
+  {
+    "name": "0.02 N Sulfuric Acid VS",
+    "strength": "0.02 N",
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+    "preparation": "Transfer 0.56 mL sulfuric acid to a 1000-mL volumetric flask containing about 500 mL water, cool and dilute to volume.",
+    "standardization": "Weigh about 50 mg tromethamine dried at 105°C for 3 h, dissolve in 50 mL water, add bromocresol green TS, and titrate with sulfuric acid solution."
+  },
+  {
+    "name": "0.05 N Sulfuric Acid VS",
+    "strength": "0.05 N",
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+    "preparation": "Transfer 1.4 mL sulfuric acid to a 1000-mL volumetric flask containing about 500 mL water, cool and dilute to volume.",
+    "standardization": "Weigh about 0.25 g tromethamine dried at 105°C for 3 h, dissolve in 50 mL water, add bromocresol green TS, and titrate with sulfuric acid solution."
+  },
+  {
+    "name": "1 N Sulfuric Acid VS",
+    "strength": "1 N",
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+    "preparation": "Slowly add 27 mL sulfuric acid to sufficient water and dilute to 1000 mL.",
+    "standardization": "Weigh about 5.0 g tromethamine dried at 105°C for 3 h, dissolve in 50 mL water, add bromocresol green TS, and titrate with sulfuric acid solution."
+  },
+  {
+    "name": "0.5 N Sulfuric Acid in Alcohol VS",
+    "strength": "0.5 N",
+    "formula": "N = mg Tromethamine / (121.14 × mL H2SO4)",
+    "preparation": "Transfer 13.9 mL sulfuric acid to a 1000-mL volumetric flask containing about 500 mL dehydrated alcohol, cool and dilute to volume.",
+    "standardization": "Weigh about 2.5 g tromethamine dried at 105°C for 3 h, dissolve in 50 mL water, add bromocresol green TS, and titrate with sulfuric acid solution."
+  },
+  {
+    "name": "0.1 N Tetrabutylammonium Hydroxide VS",
+    "strength": "0.1 N",
+    "formula": "N = mg Benzoic Acid / (122.1 × mL TBAH)",
+    "preparation": "Prepare from tetra-n-butylammonium iodide, silver oxide, methanol and toluene. Flush with dry carbon dioxide-free nitrogen and store protected from moisture and carbon dioxide.",
+    "standardization": "Dissolve about 400 mg benzoic acid in 80 mL dimethylformamide, add thymol blue indicator, titrate with tetrabutylammonium hydroxide to blue endpoint, and apply blank correction."
+  },
+  {
+    "name": "0.1 N Tetrabutylammonium Hydroxide in Methanol/Isopropyl Alcohol VS",
+    "strength": "0.1 N",
+    "formula": "N = mg Benzoic Acid / (122.1 × mL TBAH)",
+    "preparation": "Prepare from tetra-n-butylammonium iodide, silver oxide, methanol and isopropyl alcohol. Flush with dry carbon dioxide-free nitrogen and store protected from moisture and carbon dioxide.",
+    "standardization": "Dissolve about 400 mg benzoic acid in 80 mL dimethylformamide, add thymol blue indicator, titrate with tetrabutylammonium hydroxide to blue endpoint, and apply blank correction."
+  },
+  {
+    "name": "0.1 M Tetramethylammonium Bromide VS",
+    "strength": "0.1 M",
+    "formula": "M = (mL AgNO3 × N AgNO3) / mL Tetramethylammonium Bromide",
+    "preparation": "Dissolve 15.41 g tetramethylammonium bromide in water and dilute to 1000 mL.",
+    "standardization": "Add dilute nitric acid and 0.1 N silver nitrate VS, then back-titrate excess silver nitrate with ammonium thiocyanate VS."
+  },
+  {
+    "name": "0.1 M Tetramethylammonium Chloride VS",
+    "strength": "0.1 M",
+    "formula": "M = (mL AgNO3 × N AgNO3) / mL Tetramethylammonium Chloride",
+    "preparation": "Dissolve 10.96 g tetramethylammonium chloride in water and dilute to 1000 mL.",
+    "standardization": "Add dilute nitric acid and 0.1 N silver nitrate VS, then back-titrate excess silver nitrate with ammonium thiocyanate VS using ferric ammonium sulfate indicator."
+  },
+  {
+    "name": "1 N Titanium Trichloride VS",
+    "strength": "1 N",
+    "formula": "N = (mL Ferric Ammonium Sulfate × N Ferric Ammonium Sulfate) / mL TiCl3",
+    "preparation": "Add 75 mL titanium trichloride solution (1 in 5) to 75 mL hydrochloric acid and dilute with water to 1000 mL.",
+    "standardization": "Visual endpoint: Titrate ferric ammonium sulfate VS with titanium trichloride using ammonium thiocyanate indicator under inert atmosphere. Potentiometric endpoint: Use a combined platinum electrode."
+  },
+  {
+    "name": "0.02 M Zinc Sulfate VS",
+    "strength": "0.02 M",
+    "formula": "M = (mL Edetate Disodium × M Edetate Disodium) / mL ZnSO4",
+    "preparation": "Dissolve 5.76 g zinc sulfate in water and dilute to 1000 mL.",
+    "standardization": "Titrate against 0.02 M or 0.05 M edetate disodium VS using acetic acid-ammonium acetate buffer and dithizone TS to a clear rose-pink endpoint."
+  },
+  {
+    "name": "0.05 M Zinc Sulfate VS",
+    "strength": "0.05 M",
+    "formula": "M = (mL Edetate Disodium × M Edetate Disodium) / mL ZnSO4",
+    "preparation": "Dissolve 14.4 g zinc sulfate in water and dilute to 1000 mL.",
+    "standardization": "Titrate against 0.05 M edetate disodium VS using acetic acid-ammonium acetate buffer, alcohol and dithizone TS to a clear rose-pink endpoint."
+  },
+  {
+    "name": "0.1 M Zinc Sulfate VS",
+    "strength": "0.1 M",
+    "formula": "M = (mL Edetate Disodium × M Edetate Disodium) / mL ZnSO4",
+    "preparation": "Dissolve 28.8 g zinc sulfate heptahydrate in water and dilute to 1000 mL.",
+    "standardization": "Titrate against 0.1 M edetate disodium VS using acetic acid-ammonium acetate buffer, alcohol and dithizone TS to a clear rose-pink endpoint."
   }
   ]
