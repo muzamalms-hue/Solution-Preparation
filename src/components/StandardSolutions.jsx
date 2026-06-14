@@ -1,3 +1,4 @@
+// components/StandardSolutions.jsx
 import standardSolutions from "../data/standard-solutions";
 export default function StandardSolutions() {
 return (
