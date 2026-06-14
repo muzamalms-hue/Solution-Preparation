@@ -623,4 +623,249 @@ export default [
   standardization:
     "Transfer an accurately measured volume of about 40 mL of the solution to a glass-stoppered flask, add 3 g of potassium iodide followed by 3 mL of hydrochloric acid. Allow to stand for 5 min, then titrate the liberated iodine with 0.1 N sodium thiosulfate VS, adding 3 mL of starch TS as the endpoint is approached. Correct for a blank determination and calculate the normality."
   },
+  {
+  name: "0.05 M Potassium Ferricyanide VS",
+  strength: "0.05 M",
+
+  formula:
+    "M = (mL Na2S2O3 × N Na2S2O3) / 50.0",
+
+  preparation:
+    "Dissolve about 17 g of potassium ferricyanide in water and make up to 1000 mL.",
+
+  standardization:
+    "Transfer 50.0 mL of this solution to a glass-stoppered 500-mL flask, dilute with 50 mL of water, add 10 mL of potassium iodide TS and 10 mL of dilute hydrochloric acid, and allow to stand for 1 min. Then add 15 mL of zinc sulfate solution (1 in 10), and titrate the liberated iodine with 0.1 N sodium thiosulfate VS, adding 3 mL of starch TS as the endpoint is approached. Protect from light and restandardize before use."
+},
+
+{
+  name: "0.1 N Potassium Dichromate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = [(mL sample − mL blank) × N Na2S2O3] / 25.0",
+
+  preparation:
+    "Dissolve about 5 g of potassium dichromate in water and make up to 1000 mL.",
+
+  standardization:
+    "Transfer 25.0 mL of this solution to a glass-stoppered 500-mL flask, add 2 g of potassium iodide, dilute with 200 mL of water, add 5 mL of hydrochloric acid, allow to stand for 10 min in a dark place, and titrate the liberated iodine with 0.1 N sodium thiosulfate VS, adding 3 mL of starch TS as the endpoint is approached. Carry out a blank determination."
+},
+
+{
+  name: "0.025 N Potassium Dichromate VS",
+  strength: "0.025 N",
+
+  preparation:
+    "Transfer 12.259 g of potassium dichromate primary standard, previously dried according to the label instructions or at 103° for 2 h, to a 1000-mL volumetric flask. Dissolve in and dilute with water to volume. Transfer 100.0 mL of this solution to a 1000-mL volumetric flask and dilute with water to volume."
+},
+
+{
+  name: "0.5 N Alcoholic Potassium Hydroxide VS",
+  strength: "0.5 N",
+
+  formula:
+    "N = (mL HCl × N HCl) / mL KOH",
+
+  preparation:
+    "Dissolve about 34 g of potassium hydroxide in 20 mL of water, and add aldehyde-free alcohol to make 1000 mL. Allow the solution to stand in a tightly stoppered bottle for 24 h. Then quickly decant the clear supernatant into a suitable, tight container.",
+
+  standardization:
+    "Accurately measure about 25 mL of 0.5 N hydrochloric acid VS. Dilute with 50 mL of water, add 2 drops of phenolphthalein TS, and titrate with the alcoholic potassium hydroxide solution until a permanent pale pink color is produced."
+},
+
+{
+  name: "0.1 M Alcoholic Potassium Hydroxide VS",
+  strength: "0.1 M",
+
+  preparation:
+    "Dilute 20 mL of 0.5 N alcoholic potassium hydroxide VS to 100.0 mL with aldehyde-free alcohol."
+},
+
+{
+  name: "0.1 N Methanolic Potassium Hydroxide VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mL HCl × N HCl) / mL KOH",
+
+  preparation:
+    "Dissolve about 6.8 g of potassium hydroxide in 4 mL of water, and add methanol to make 1000 mL. Allow the solution to stand in a tightly stoppered bottle for 24 h. Then quickly decant the clear supernatant into a suitable, tight container.",
+
+  standardization:
+    "Accurately measure about 25 mL of 0.1 N hydrochloric acid VS. Dilute with 50 mL of water, add 2 drops of phenolphthalein TS, and titrate with the methanolic potassium hydroxide solution until a permanent pale pink color is produced."
+},
+
+{
+  name: "0.1 N Potassium Hydroxide VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mL HCl × N HCl) / mL KOH",
+
+  preparation:
+    "Transfer 100 mL of 1 N potassium hydroxide VS to a 1000-mL volumetric flask. Dilute with carbon dioxide-free water to volume.",
+
+  standardization:
+    "Add 2 drops of phenolphthalein TS to 20 mL of 0.1 N hydrochloric acid VS. Titrate with the potassium hydroxide solution until a permanent pale-pink color is produced."
+},
+
+{
+  name: "1 N Potassium Hydroxide VS",
+  strength: "1 N",
+
+  formula:
+    "N = g potassium biphthalate / (0.20422 × mL KOH)",
+
+  preparation:
+    "Dissolve 68 g of potassium hydroxide in about 950 mL of water. Add a freshly prepared saturated solution of barium hydroxide until no more precipitate forms. Shake thoroughly and allow to stand overnight in a stoppered bottle. Decant the clear liquid or filter into a tight polyolefin bottle.",
+
+  standardization:
+    "Accurately weigh about 5 g of potassium biphthalate, previously crushed lightly and dried at 120° for 2 h, and dissolve in 75 mL of carbon dioxide-free water. Add 2 drops of phenolphthalein TS and titrate with the potassium hydroxide solution to a permanent pink endpoint. Each 204.22 mg of potassium biphthalate is equivalent to 1 mL of 1 N potassium hydroxide."
+},
+
+{
+  name: "0.05 M Potassium Iodate VS",
+  strength: "0.05 M",
+
+  formula:
+    "M = (mL Na2S2O3 × N Na2S2O3) / (mL KIO3 × 6)",
+
+  preparation:
+    "Dissolve 10.700 g of potassium iodate, previously dried at 110° to constant weight, in water and make up to 1000.0 mL.",
+
+  standardization:
+    "To 15.0 mL of solution in a 250-mL iodine flask, add 3 g of potassium iodide and 3 mL of hydrochloric acid previously diluted with 10 mL of water. Stopper immediately and allow to stand in the dark for 5 min. Add 50 mL of cold water and titrate the liberated iodine with freshly standardized 0.1 N sodium thiosulfate VS. Add 3 mL of starch indicator solution near the endpoint and continue to disappearance of the blue starch-iodine color."
+},
+
+{
+  name: "0.1 N Potassium Permanganate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = g Na2C2O4 / (mL KMnO4 × 0.06700)",
+
+  preparation:
+    "Dissolve about 3.3 g of potassium permanganate in 1000 mL of water and boil for about 15 min. Allow to stand for at least 2 days and filter through a fine-porosity sintered-glass crucible.",
+
+  standardization:
+    "Accurately weigh about 200 mg of primary standard sodium oxalate, dried according to the label instructions, and dissolve in 250 mL of water. Add 7 mL of sulfuric acid, heat to about 70°C, and titrate with potassium permanganate solution until a pale pink color persists for 15 s. The final temperature should not be less than 60°C. Each 6.700 mg of sodium oxalate is equivalent to 1 mL of 0.1 N potassium permanganate."
+},
+
+{
+  name: "0.02 M Potassium Permanganate VS",
+  strength: "0.02 M",
+
+  preparation:
+    "Use 0.1 N Potassium Permanganate VS."
+},
+
+{
+  name: "0.1 N Potassium Thiocyanate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mL AgNO3 × N AgNO3) / mL KSCN",
+
+  preparation:
+    "Weigh exactly 9.72 g of potassium thiocyanate, previously dried at 110° for 2 h, transfer to a 1-L volumetric flask, dilute with water to volume, and mix well.",
+
+  standardization:
+    "Transfer 40.0 mL of freshly standardized 0.1 N silver nitrate VS to a 250-mL Erlenmeyer flask. Add 100 mL of water, 1 mL of nitric acid, and 2 mL of ferric ammonium sulfate TS. Titrate with the potassium thiocyanate solution, with agitation, to a permanent light pinkish-brown color of the supernatant."
+},
+
+{
+  name: "0.1 N Silver Nitrate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = mg NaCl / (mL AgNO3 × 58.44)",
+
+  preparation:
+    "Dissolve about 17.5 g of silver nitrate in 1000 mL of water.",
+
+  standardization:
+    "Transfer about 100 mg of primary or volumetric standard sodium chloride, accurately weighed and dried according to the label instructions or at 110° for 2 h, to a 150-mL beaker. Dissolve in 5 mL of water and add 5 mL of acetic acid, 50 mL of methanol, and about 0.5 mL of eosin Y TS. Stir and titrate with the silver nitrate solution."
+  },
+  {
+  "name": "0.001 N Silver Nitrate VS",
+  "strength": "0.001 N",
+
+  "formula": "N = (mL NaCl × N NaCl) / mL AgNO3",
+
+  "preparation": "Transfer 10 mL of 0.1 N silver nitrate VS to a 1000-mL volumetric flask and dilute with water to volume. Alternatively, dissolve about 175 mg of silver nitrate in 1000 mL of water.",
+
+  "standardization": "Transfer 0.10 mL of 0.1 N sodium chloride VS to a 150-mL beaker containing 50 mL of water, and add 50 mL of alcohol, 5 mL of acetic acid, and 0.5 mL of eosin Y TS. Stir and titrate with the silver nitrate solution. Potentiometric endpoint may also be used with a combined silver electrode."
+  },
+  {
+  "name": "0.05 N Silver Nitrate VS",
+  "strength": "0.05 N",
+
+  "formula": "N = mg NaCl / (mL AgNO3 × 58.44)",
+
+  "preparation": "Dissolve 8.75 g of silver nitrate in water and dilute to 1000 mL.",
+
+  "standardization": "Transfer about 50 mg of dried sodium chloride primary standard to a 150-mL beaker. Dissolve in 5 mL of water and add 5 mL of acetic acid, 50 mL of methanol, and 0.5 mL of eosin Y TS. Stir and titrate with the silver nitrate solution."
+  },
+  {
+  "name": "0.002 N Silver Nitrate in Isopropyl Alcohol VS",
+  "strength": "0.002 N",
+
+  "preparation": "Transfer 20.0 mL of 0.1 N silver nitrate VS to a 1000-mL volumetric flask and dilute with isopropyl alcohol to volume. Store in a low-actinic flask."
+  },
+  {
+  "name": "0.05 M Sodium Arsenite VS",
+  "strength": "0.05 M",
+
+  "preparation": "Transfer 4.9455 g of arsenic trioxide, previously dried at 100°C to constant weight, to a 1000-mL volumetric flask. Dissolve in 40 mL of 1 N sodium hydroxide. Neutralize with 1 N sulfuric acid or 1 N hydrochloric acid until neutral or slightly acidic to litmus. Add 30 g of sodium bicarbonate, dilute with water to volume, and mix."
+  },
+  {
+  "name": "0.025 N Sodium Hydroxide VS",
+  "strength": "0.025 N",
+
+  "formula": "N = g KHC8H4O4 / (0.20422 × mL NaOH)",
+
+  "preparation": "Transfer 25 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+
+  "standardization": "Accurately weigh about 125 mg of potassium biphthalate, previously crushed lightly and dried at 120°C for 2 h. Dissolve in 75 mL of carbon dioxide-free water and determine the endpoint potentiometrically. Each 5.1055 mg of potassium biphthalate is equivalent to 1 mL of 0.025 N sodium hydroxide."
+  },
+  {
+  "name": "0.01 N Sodium Hydroxide VS",
+  "strength": "0.01 N",
+
+  "formula": "N = g KHC8H4O4 / (0.20422 × mL NaOH)",
+
+  "preparation": "Transfer 10 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+
+  "standardization": "Visual endpoint: Accurately weigh about 50 mg of potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add 2 drops of phenolphthalein TS, and titrate to a permanent pink color. Potentiometric endpoint: Use about 25 mg potassium biphthalate and titrate potentiometrically."
+    },
+  {
+  "name": "0.02 N Sodium Hydroxide VS",
+  "strength": "0.02 N",
+
+  "formula": "N = (g KHC8H4O4 × Assay/100) / (0.20422 × mL NaOH)",
+
+  "preparation": "Transfer 20 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+
+  "standardization": "Visual endpoint: Accurately weigh about 100 mg potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Use about 50 mg potassium biphthalate and titrate using a combined pH electrode."
+  },
+  {
+  "name": "0.05 N Sodium Hydroxide VS",
+  "strength": "0.05 N",
+
+  "formula": "N = (g KHC8H4O4 × Assay/100) / (0.20422 × mL NaOH)",
+
+  "preparation": "Transfer 50 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+
+  "standardization": "Visual endpoint: Accurately weigh about 250 mg potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Use about 125 mg potassium biphthalate and titrate using a combined pH electrode."
+  },
+  {
+  "name": "0.5 N Sodium Hydroxide VS",
+  "strength": "0.5 N",
+
+  "formula": "N = (g KHC8H4O4 × Assay/100) / (0.20422 × mL NaOH)",
+
+  "preparation": "Transfer 500 mL of 1 N sodium hydroxide VS to a 1000-mL volumetric flask and dilute with carbon dioxide-free water to volume.",
+
+  "standardization": "Visual endpoint: Accurately weigh about 1.25 g potassium biphthalate, dissolve in 75 mL of carbon dioxide-free water, add phenolphthalein TS and titrate to a permanent pink color. Potentiometric endpoint: Accurately weigh about 1.25 g potassium biphthalate and titrate potentiometrically using a combined pH electrode."
+  }
   ]
