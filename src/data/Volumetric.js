@@ -177,7 +177,166 @@ export default [
   standardization:
     "Standard stock solution: Transfer 9.5 g of Sucrose to a 1-L volumetric flask, dissolve in 100 mL of water, add 5 mL of hydrochloric acid, and store for 3 days at 20°–25°. Dilute with water to volume. This solution is stable for several months. Invert sugar solution: Immediately before use in standardizing the Cupric Tartrate, Alkaline, Solution, transfer 25 mL of Standard stock solution to a 100-mL volumetric flask, and dilute with water to volume. Standardization: Transfer 20.0 mL of the Cupric Tartrate, Alkaline, Solution to a 400-mL flask containing a few boiling chips, and add 15 mL of water and 39.0 mL of Invert sugar solution. Mix by swirling at ambient temperature, and immediately place the flask on the wire gauze of the Apparatus. Adjust the burner so that the boiling point of the solution is reached in about 2 min. Boil gently but steadily for 2 min. As boiling continues, add 3–4 drops of methylene blue solution (1 in 100). Complete the titration within 1 min by adding the Invert sugar solution dropwise until the blue color disappears. Allow a 5-s reaction time between drops at the end of titration. Adjust the Cupric Tartrate, Alkaline, Solution for the correct amount of copper (equivalent to 100 mg of invert sugar), and restandardize if the total volume of Invert sugar solution is more or less than 40.0 mL."
 },
+{
+  name: "Standard Dichlorophenol-Indophenol Solution",
 
+  formula:
+    "mg equivalent ascorbic acid/mL = (mg ascorbic acid × 2) / (50 × mL dichlorophenol-indophenol corrected for blank)",
+
+  preparation:
+    "To 50 mg of 2,6-dichlorophenol-indophenol sodium stored in a desiccator over soda lime add 50 mL of water containing 42 mg of sodium bicarbonate. Shake vigorously until dissolved, dilute with water to 200 mL, and filter into an amber glass-stoppered bottle.",
+
+  standardization:
+    "Accurately weigh 50 mg of USP Ascorbic Acid RS and dilute to 50 mL with metaphosphoric-acetic acids TS. Transfer 2 mL of this solution to a conical flask containing 5 mL metaphosphoric-acetic acids TS and titrate rapidly with dichlorophenol-indophenol solution to a rose-pink endpoint persisting for at least 5 seconds. Perform a blank determination and calculate the mg equivalent of ascorbic acid per mL."
+},
+
+{
+  name: "0.002 M Edetate Disodium VS",
+  strength: "0.002 M",
+
+  preparation:
+    "Transfer 20 mL of 0.1 M edetate disodium VS to a 1000-mL volumetric flask and dilute with water to volume."
+},
+
+{
+  name: "0.01 M Edetate Disodium VS",
+  strength: "0.01 M",
+
+  formula:
+    "M = (g CaCO3 × 1000) / (100.09 × mL EDTA)",
+
+  preparation:
+    "Transfer 100 mL of 0.1 M edetate disodium VS to a 1000-mL volumetric flask and dilute with water to volume.",
+
+  standardization:
+    "Accurately weigh about 40 mg of chelometric standard calcium carbonate previously dried at 110°C for 2 h. Dissolve using dilute hydrochloric acid, dilute to about 200 mL, add sodium hydroxide TS to pH 12–13, add 300 mg hydroxy naphthol blue and titrate with EDTA to a blue endpoint."
+},
+
+{
+  name: "0.02 M Edetate Disodium VS",
+  strength: "0.02 M",
+
+  formula:
+    "M = (g CaCO3 × 1000) / (100.09 × mL EDTA)",
+
+  preparation:
+    "Transfer 200 mL of 0.1 M edetate disodium VS to a 1000-mL volumetric flask and dilute with water to volume.",
+
+  standardization:
+    "Accurately weigh about 80 mg of chelometric standard calcium carbonate previously dried at 110°C for 2 h. Dissolve using dilute hydrochloric acid, adjust to pH 12–13 with sodium hydroxide TS, add hydroxy naphthol blue and titrate with EDTA to a blue endpoint."
+},
+
+{
+  name: "0.05 M Edetate Disodium VS",
+  strength: "0.05 M",
+
+  formula:
+    "M = (g CaCO3 × Assay/100 × 1000) / (100.09 × mL EDTA)",
+
+  preparation:
+    "Dissolve 18.6 g of edetate disodium in water and dilute to 1000 mL.",
+
+  standardization:
+    "Accurately weigh about 200 mg of chelometric standard calcium carbonate dried at 210°C for 4 h. Dissolve with dilute hydrochloric acid, adjust pH to 12–13 with sodium hydroxide TS, add hydroxy naphthol blue and titrate with EDTA to a blue endpoint."
+},
+
+{
+  name: "0.1 M Edetate Disodium VS",
+  strength: "0.1 M",
+
+  formula:
+    "M = (g CaCO3 × Assay/100 × 1000) / (100.09 × mL EDTA)",
+
+  preparation:
+    "Dissolve 37.22 g of edetate disodium in water and dilute to 1000 mL.",
+
+  standardization:
+    "Accurately weigh about 400 mg of chelometric standard calcium carbonate dried at 210°C for 4 h. Dissolve with dilute hydrochloric acid, adjust pH to 12–13 with sodium hydroxide TS, add hydroxy naphthol blue and titrate with EDTA to a blue endpoint."
+},
+
+{
+  name: "0.1 N Ferric Ammonium Sulfate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mL Na2S2O3 × N Na2S2O3) / (mL Ferric Ammonium Sulfate × 2)",
+
+  preparation:
+    "Dissolve 50 g of ferric ammonium sulfate in a mixture of 300 mL water and 6 mL sulfuric acid. Dilute with water to 1000 mL and mix.",
+
+  standardization:
+    "Measure about 40 mL of solution, add 5 mL hydrochloric acid and potassium iodide solution. Allow to stand for 10 min and titrate liberated iodine with 0.1 N sodium thiosulfate VS using starch TS near endpoint. Apply blank correction."
+},
+
+{
+  name: "0.1 N Ferrous Ammonium Sulfate VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mL Ce(IV) × N Ce(IV)) / mL Ferrous Ammonium Sulfate",
+
+  preparation:
+    "Dissolve 40 g of ferrous ammonium sulfate in a cooled mixture of 40 mL sulfuric acid and 200 mL water. Dilute with water to 1000 mL.",
+
+  standardization:
+    "Measure 25–30 mL of solution, add 2 drops orthophenanthroline TS and titrate with 0.1 N ceric sulfate VS until red color changes to pale blue."
+},
+
+{
+  name: "0.07 N Ferrous Ammonium Sulfate VS",
+  strength: "0.07 N",
+
+  formula:
+    "N = (mL K2Cr2O7 × N K2Cr2O7) / mL Ferrous Ammonium Sulfate",
+
+  preparation:
+    "Dissolve 27.5 g of ferrous ammonium sulfate in 500 mL water, add 20 mL sulfuric acid, cool and dilute to 1000 mL.",
+
+  standardization:
+    "Dilute 25 mL of 0.025 N potassium dichromate VS with water to 100 mL. Add 30 mL sulfuric acid, cool, add ferroin TS and titrate with ferrous ammonium sulfate solution to reddish-brown endpoint."
+},
+
+{
+  name: "0.01 N Hydrochloric Acid VS",
+  strength: "0.01 N",
+
+  formula:
+    "N = (mg tromethamine × Assay/100) / (121.14 × mL HCl)",
+
+  preparation:
+    "Transfer 100 mL of 0.1 N hydrochloric acid VS to a 1000-mL volumetric flask and dilute with water to volume.",
+
+  standardization:
+    "Accurately weigh about 25 mg of tromethamine dried at 105°C for 3 h, dissolve in 50 mL water, add 2 drops bromocresol green TS and titrate with 0.01 N hydrochloric acid to a pale yellow endpoint."
+},
+
+{
+  name: "0.02 N Hydrochloric Acid VS",
+  strength: "0.02 N",
+
+  formula:
+    "N = (mg tromethamine × Assay/100) / (121.14 × mL HCl)",
+
+  preparation:
+    "Transfer 1.6 mL hydrochloric acid to a 1000-mL volumetric flask containing about 250 mL water, cool and dilute to volume. Alternatively, dilute 20 mL of 1 N hydrochloric acid VS to 1000 mL.",
+
+  standardization:
+    "Accurately weigh about 25 mg of tromethamine dried at 105°C for 3 h, dissolve in 50 mL water and titrate potentiometrically using a combined pH electrode. Each 2.4228 mg of tromethamine is equivalent to 1 mL of 0.02 N hydrochloric acid."
+},
+
+{
+  name: "0.1 N Hydrochloric Acid VS",
+  strength: "0.1 N",
+
+  formula:
+    "N = (mg tromethamine × Assay/100) / (121.14 × mL HCl)",
+
+  preparation:
+    "Dilute 8.5 mL of hydrochloric acid with water to 1000 mL.",
+
+  standardization:
+    "Accurately weigh about 0.5 g of tromethamine dried at 105°C for 3 h, dissolve in 50 mL water, add 2 drops bromocresol green TS and titrate with hydrochloric acid solution to a pale yellow endpoint. Each 12.114 mg of tromethamine is equivalent to 1 mL of 0.1 N hydrochloric acid."
+  },
   {
   name: "0.1 N Hydrochloric Acid VS",
   strength: "0.1 N",
@@ -190,5 +349,121 @@ export default [
 
   standardization:
     "Visual endpoint: Accurately weigh about 0.5 g of tromethamine, dried according to the label instructions or dried at 105° for 3 h. Dissolve in 50 mL of water, add 2 drops of bromocresol green TS, and titrate with the hydrochloric acid solution to a pale yellow endpoint. Each 12.114 mg of tromethamine is equivalent to 1 mL of 0.1 N hydrochloric acid. Potentiometric endpoint: Accurately weigh about 100 mg of tromethamine, dried according to the label instructions or dried at 105° for 3 h. Dissolve in 50 mL of water and titrate potentiometrically with the hydrochloric acid solution using a combined pH electrode. Each 12.114 mg of tromethamine is equivalent to 1 mL of 0.1 N hydrochloric acid."
-}
+},
+
+  {
+  name: "0.5 N Hydrochloric Acid VS",
+  strength: "0.5 N",
+
+  formula:
+    "N = (mg tromethamine × Assay/100) / (121.14 × mL HCl)",
+
+  preparation:
+    "To a 1000-mL volumetric flask containing 40 mL of water slowly add 43 mL of hydrochloric acid. Cool, and add water to volume.",
+
+  standardization:
+    "Accurately weigh about 2.5 g of tromethamine, dried according to the label instructions or, if this information is not available, dried at 105° for 3 h. Dissolve in 50 mL of water, and add 2 drops of bromocresol green TS. Titrate with the hydrochloric acid solution to a pale yellow endpoint. Each 60.57 mg of tromethamine is equivalent to 1 mL of 0.5 N hydrochloric acid."
+},
+
+{
+  name: "1 N Hydrochloric Acid VS",
+  strength: "1 N",
+
+  formula:
+    "N = (mg tromethamine × Assay/100) / (121.14 × mL HCl)",
+
+  preparation:
+    "Dilute 85 mL of hydrochloric acid with water to 1000 mL.",
+
+  standardization:
+    "Accurately weigh about 5.0 g of tromethamine, dried according to the label instructions or, if this information is not available, dried at 105° for 3 h. Dissolve in 50 mL of water, and add 2 drops of bromocresol green TS. Titrate with the hydrochloric acid solution to a pale yellow endpoint. Each 121.14 mg of tromethamine is equivalent to 1 mL of 1 N hydrochloric acid."
+},
+
+{
+  name: "0.1 M Alcoholic Hydrochloric Acid VS",
+  strength: "0.1 M",
+
+  preparation:
+    "Dilute 9.0 mL of hydrochloric acid to 1000 mL with aldehyde-free alcohol."
+},
+
+{
+  name: "0.5 N Hydrochloric Acid in Methanol VS",
+  strength: "0.5 N",
+
+  formula:
+    "N = mg tromethamine / (121.14 × mL HCl)",
+
+  preparation:
+    "To a 1000-mL volumetric flask containing 40 mL of water slowly add 43 mL of hydrochloric acid. Cool, and add methanol to volume.",
+
+  standardization:
+    "Accurately weigh about 2.5 g of tromethamine, dried according to the label instructions or, if this information is not available, dried at 105° for 3 h. Dissolve in 50 mL of water and add 2 drops of bromocresol green TS. Titrate with 0.5 N hydrochloric acid in methanol to a pale yellow endpoint. Each 60.57 mg of tromethamine is equivalent to 1 mL of 0.5 N hydrochloric acid in methanol."
+},
+
+{
+  name: "0.01 N Iodine VS",
+  strength: "0.01 N",
+
+  preparation:
+    "Dissolve about 1.4 g of iodine in a solution of 3.6 g of potassium iodide in 100 mL of water, add 3 drops of hydrochloric acid, and dilute with water to 1000 mL.",
+
+  standardization:
+    "Transfer 100.0 mL of iodine solution to a 250-mL flask, add 1 mL of 1 N hydrochloric acid, swirl gently to mix, and titrate with 0.1 N sodium thiosulfate VS until the solution has a pale yellow color. Add 2 mL of starch TS, and continue titrating until the solution is colorless."
+},
+
+{
+  name: "0.05 N Iodine VS",
+  strength: "0.05 N",
+
+  preparation:
+    "Dissolve about 6.5 g of iodine in a solution of 18 g of potassium iodide in 100 mL of water, add 3 drops of hydrochloric acid, and dilute with water to 1000 mL.",
+
+  standardization:
+    "Transfer 50.0 mL of the iodine solution to a 250-mL flask, dilute with water to 100 mL, add 1 mL of 1 N hydrochloric acid, swirl gently to mix, and titrate with 0.1 N sodium thiosulfate VS until the solution has a pale yellow color. Add 2 mL of starch TS, and continue titrating until the solution is colorless."
+},
+
+{
+  name: "0.1 N Iodine VS",
+  strength: "0.1 N",
+
+  preparation:
+    "Dissolve about 14 g of iodine in a solution of 36 g of potassium iodide in 100 mL of water, add 3 drops of hydrochloric acid, and dilute with water to 1000 mL.",
+
+  standardization:
+    "Transfer 25.0 mL of the iodine solution to a 250-mL flask, dilute with water to 100 mL, add 1 mL of 1 N hydrochloric acid, swirl gently to mix, and titrate with 0.1 N sodium thiosulfate VS until the solution has a pale yellow color. Add 2 mL of starch TS and continue titrating until the solution is colorless."
+},
+
+{
+  name: "0.01 M Lead Nitrate VS",
+  strength: "0.01 M",
+
+  preparation:
+    "Dilute 50.0 mL of 0.1 M Lead Nitrate to 500.0 mL with water.",
+
+  standardization:
+    "To 20.0 mL of the lead nitrate solution add 300 mL of water. Add about 50 mg of Xylenol Orange Triturate and add methenamine until the solution becomes violet-pink. Titrate with 0.1 M edetate disodium VS to the yellow endpoint. Calculate the molarity."
+},
+
+{
+  name: "0.01 M Lead Perchlorate VS",
+  strength: "0.01 M",
+
+  preparation:
+    "Accurately pipet 100 mL of commercially available 0.1 M lead perchlorate solution into a 1000-mL volumetric flask, and dilute with water to volume.",
+
+  standardization:
+    "Accurately pipet 50 mL of 0.01 M lead perchlorate solution into a 250-mL conical flask. Add 3 mL of aqueous hexamethylenetetramine solution and 4 drops of 0.5% xylenol orange indicator. Titrate with 0.05 M edetate disodium VS to a yellow endpoint."
+},
+
+{
+  name: "0.1 M Lead Perchlorate VS",
+  strength: "0.1 M",
+
+  preparation:
+    "Dissolve 46 g of lead perchlorate in water, and dilute with water to 1000.0 mL.",
+
+  standardization:
+    "Accurately weigh about 150 mg of sodium sulfate, previously dried at 105° for 4 h, and dissolve in 50 mL of water. Add 50 mL of a mixture of water and formaldehyde (1:1), and stir for about 1 min. Determine the endpoint potentiometrically using a lead ion selective electrode. Perform a blank determination, and make any necessary corrections. Each 14.204 mg of sodium sulfate is equivalent to 1 mL of 0.1 M lead perchlorate."
+},
   ]
