@@ -1,5 +1,6 @@
 import { useState } from "react";
 import VolumetricSolution from "./VolumetricSolution";
+import StandardSolutions from "./StandardSolutions";
 
 export default function Solutions() {
   const [category, setCategory] =
@@ -7,6 +8,10 @@ export default function Solutions() {
 
   if (category === "volumetric") {
     return <VolumetricSolution />;
+  }
+
+  if (category === "standard") {
+    return <StandardSolutions />;
   }
 
   return (
